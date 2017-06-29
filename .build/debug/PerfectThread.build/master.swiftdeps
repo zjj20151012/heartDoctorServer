@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "8c3ca7f1403ee08de21b9b5558510324"
+build_time: [552033877, 21063000]
+inputs:
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Promise.swift": [552033848, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Threading.swift": [552033848, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/ThreadQueue.swift": [552033848, 0]

@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "c6d1eb919c3dc26e4e8cdba319791c2e"
+build_time: [552033885, 919577000]
+inputs:
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/Net.swift": [552033847, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetEvent.swift": [552033847, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetNamedPipe.swift": [552033847, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetTCP.swift": [552033847, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetTCPSSL.swift": [552033847, 0]
