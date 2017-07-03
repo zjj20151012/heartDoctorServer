@@ -38,6 +38,7 @@ provides-member:
 - ["C11PerfectHTTP13RouteVariable", ""]
 - ["V11PerfectHTTP8RouteMap", ""]
 - ["V11PerfectHTTP7Routing", ""]
+- ["P11PerfectHTTP14RouteNavigator", "findHandler"]
 - ["SS", "routePathComponents"]
 provides-dynamic-lookup:
 depends-top-level:
@@ -964,6 +965,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -1012,4 +1014,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
-interface-hash: "487d951df21cbb0b2eff7619a6bdb0b8"
+interface-hash: "ecaa5e1671601b24a018c1fc42d8c566"

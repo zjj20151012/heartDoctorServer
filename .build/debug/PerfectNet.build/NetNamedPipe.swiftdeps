@@ -36,7 +36,6 @@ depends-top-level:
 - "NetNamedPipe"
 - "NetTCP"
 - !private "SCM_RIGHTS"
-- !private "SOCK_STREAM"
 - !private "SOL_SOCKET"
 - "String"
 - !private "StringLiteralType"
@@ -58,7 +57,6 @@ depends-top-level:
 - !private "sockaddr"
 - !private "sockaddr_in"
 - !private "sockaddr_un"
-- !private "socket"
 - !private "socklen_t"
 depends-member:
 - !private ["Vs13AnyCollection", "makeIterator"]
@@ -75,7 +73,6 @@ depends-member:
 - !private ["Ps9AnyObject", "NetNamedPipe"]
 - !private ["Ps9AnyObject", "NetTCP"]
 - !private ["Ps9AnyObject", "SCM_RIGHTS"]
-- !private ["Ps9AnyObject", "SOCK_STREAM"]
 - !private ["Ps9AnyObject", "SOL_SOCKET"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "ThrowNetworkError"]
@@ -100,7 +97,6 @@ depends-member:
 - !private ["Ps9AnyObject", "sendFd"]
 - !private ["Ps9AnyObject", "sendmsg"]
 - !private ["Ps9AnyObject", "sockaddr"]
-- !private ["Ps9AnyObject", "socket"]
 - !private ["Ps9AnyObject", "socklen_t"]
 - !private ["Ps9AnyObject", "utf8"]
 - ["Ps9AnyObject", ""]
@@ -211,6 +207,10 @@ depends-member:
 - !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "next"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- !private ["P10PerfectLib15JSONConvertible", "append"]
+- !private ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "utf8"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "utf8"]
@@ -234,6 +234,56 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "utf8"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "utf8"]
+- !private ["C10PerfectNet3Net", "AF_UNIX"]
+- ["C10PerfectNet3Net", "Bool"]
+- !private ["C10PerfectNet3Net", "CChar"]
+- !private ["C10PerfectNet3Net", "Darwin"]
+- ["C10PerfectNet3Net", "Double"]
+- !private ["C10PerfectNet3Net", "EAGAIN"]
+- !private ["C10PerfectNet3Net", "EINPROGRESS"]
+- !private ["C10PerfectNet3Net", "Int"]
+- ["C10PerfectNet3Net", "Int32"]
+- !private ["C10PerfectNet3Net", "Int8"]
+- !private ["C10PerfectNet3Net", "MemoryLayout"]
+- !private ["C10PerfectNet3Net", "Mirror"]
+- !private ["C10PerfectNet3Net", "NetEvent"]
+- ["C10PerfectNet3Net", "NetNamedPipe"]
+- ["C10PerfectNet3Net", "NetTCP"]
+- !private ["C10PerfectNet3Net", "SCM_RIGHTS"]
+- !private ["C10PerfectNet3Net", "SOL_SOCKET"]
+- ["C10PerfectNet3Net", "String"]
+- !private ["C10PerfectNet3Net", "ThrowNetworkError"]
+- ["C10PerfectNet3Net", "UInt16"]
+- !private ["C10PerfectNet3Net", "UInt8"]
+- !private ["C10PerfectNet3Net", "UnsafeMutablePointer"]
+- !private ["C10PerfectNet3Net", "UnsafeMutableRawPointer"]
+- ["C10PerfectNet3Net", "bind"]
+- !private ["C10PerfectNet3Net", "cmsghdr"]
+- ["C10PerfectNet3Net", "connect"]
+- !private ["C10PerfectNet3Net", "errno"]
+- !private ["C10PerfectNet3Net", "fd"]
+- !private ["C10PerfectNet3Net", "getpeername"]
+- !private ["C10PerfectNet3Net", "getsockname"]
+- ["C10PerfectNet3Net", "init"]
+- !private ["C10PerfectNet3Net", "initSocket"]
+- !private ["C10PerfectNet3Net", "invalidSocket"]
+- !private ["C10PerfectNet3Net", "iovec"]
+- ["C10PerfectNet3Net", "makeFromFd"]
+- ["C10PerfectNet3Net", "makeUNAddr"]
+- !private ["C10PerfectNet3Net", "msghdr"]
+- ["C10PerfectNet3Net", "peerName"]
+- ["C10PerfectNet3Net", "receiveFd"]
+- ["C10PerfectNet3Net", "receiveNetNamedPipe"]
+- ["C10PerfectNet3Net", "receiveNetTCP"]
+- !private ["C10PerfectNet3Net", "recvmsg"]
+- !private ["C10PerfectNet3Net", "sa_family_t"]
+- ["C10PerfectNet3Net", "sendFd"]
+- !private ["C10PerfectNet3Net", "sendmsg"]
+- ["C10PerfectNet3Net", "sockName"]
+- !private ["C10PerfectNet3Net", "sockaddr"]
+- !private ["C10PerfectNet3Net", "sockaddr_in"]
+- !private ["C10PerfectNet3Net", "sockaddr_un"]
+- !private ["C10PerfectNet3Net", "socklen_t"]
 - !private ["C10PerfectNet8NetEvent", "add"]
 - !private ["C10PerfectNet8NetEvent", "noTimeout"]
 - !private ["C10PerfectNet12NetNamedPipe", "AF_UNIX"]
@@ -252,7 +302,6 @@ depends-member:
 - ["C10PerfectNet12NetNamedPipe", "NetNamedPipe"]
 - ["C10PerfectNet12NetNamedPipe", "NetTCP"]
 - !private ["C10PerfectNet12NetNamedPipe", "SCM_RIGHTS"]
-- !private ["C10PerfectNet12NetNamedPipe", "SOCK_STREAM"]
 - !private ["C10PerfectNet12NetNamedPipe", "SOL_SOCKET"]
 - ["C10PerfectNet12NetNamedPipe", "String"]
 - !private ["C10PerfectNet12NetNamedPipe", "ThrowNetworkError"]
@@ -269,7 +318,7 @@ depends-member:
 - !private ["C10PerfectNet12NetNamedPipe", "getpeername"]
 - !private ["C10PerfectNet12NetNamedPipe", "getsockname"]
 - ["C10PerfectNet12NetNamedPipe", "init"]
-- ["C10PerfectNet12NetNamedPipe", "initSocket"]
+- !private ["C10PerfectNet12NetNamedPipe", "initSocket"]
 - !private ["C10PerfectNet12NetNamedPipe", "invalidSocket"]
 - !private ["C10PerfectNet12NetNamedPipe", "iovec"]
 - ["C10PerfectNet12NetNamedPipe", "makeFromFd"]
@@ -287,7 +336,6 @@ depends-member:
 - !private ["C10PerfectNet12NetNamedPipe", "sockaddr"]
 - !private ["C10PerfectNet12NetNamedPipe", "sockaddr_in"]
 - !private ["C10PerfectNet12NetNamedPipe", "sockaddr_un"]
-- !private ["C10PerfectNet12NetNamedPipe", "socket"]
 - !private ["C10PerfectNet12NetNamedPipe", "socklen_t"]
 - !private ["C10PerfectNet6NetTCP", "AF_UNIX"]
 - ["C10PerfectNet6NetTCP", "Bool"]
@@ -305,7 +353,6 @@ depends-member:
 - ["C10PerfectNet6NetTCP", "NetNamedPipe"]
 - ["C10PerfectNet6NetTCP", "NetTCP"]
 - !private ["C10PerfectNet6NetTCP", "SCM_RIGHTS"]
-- !private ["C10PerfectNet6NetTCP", "SOCK_STREAM"]
 - !private ["C10PerfectNet6NetTCP", "SOL_SOCKET"]
 - ["C10PerfectNet6NetTCP", "String"]
 - !private ["C10PerfectNet6NetTCP", "ThrowNetworkError"]
@@ -321,7 +368,7 @@ depends-member:
 - !private ["C10PerfectNet6NetTCP", "getpeername"]
 - !private ["C10PerfectNet6NetTCP", "getsockname"]
 - ["C10PerfectNet6NetTCP", "init"]
-- ["C10PerfectNet6NetTCP", "initSocket"]
+- !private ["C10PerfectNet6NetTCP", "initSocket"]
 - !private ["C10PerfectNet6NetTCP", "invalidSocket"]
 - !private ["C10PerfectNet6NetTCP", "iovec"]
 - ["C10PerfectNet6NetTCP", "makeFromFd"]
@@ -339,9 +386,9 @@ depends-member:
 - !private ["C10PerfectNet6NetTCP", "sockaddr"]
 - !private ["C10PerfectNet6NetTCP", "sockaddr_in"]
 - !private ["C10PerfectNet6NetTCP", "sockaddr_un"]
-- !private ["C10PerfectNet6NetTCP", "socket"]
 - !private ["C10PerfectNet6NetTCP", "socklen_t"]
 - ["C10PerfectNet6NetTCP", ""]
+- !private ["P13PerfectCrypto5Octal", "init"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
@@ -500,6 +547,7 @@ depends-nominal:
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
+- !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Os12MemoryLayout"
 - !private "Vs6Mirror"
@@ -512,9 +560,11 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- "C10PerfectNet3Net"
 - !private "C10PerfectNet8NetEvent"
 - "C10PerfectNet12NetNamedPipe"
 - "C10PerfectNet6NetTCP"
+- !private "P13PerfectCrypto5Octal"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps8Sequence"
@@ -571,10 +621,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectLib.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectThread.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
@@ -622,4 +674,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
-interface-hash: "b77a9d1854c47b7ff9198e013371ac66"
+interface-hash: "b4d525c92769385f9d5787ab050b2054"

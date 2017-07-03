@@ -3,23 +3,28 @@ provides-top-level:
 - "HTTPServer"
 provides-nominal:
 - "C17PerfectHTTPServer10HTTPServer"
+- "OC17PerfectHTTPServer10HTTPServer11ALPNSupport"
 provides-member:
 - ["C17PerfectHTTPServer10HTTPServer", ""]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "!="
-- !private "=="
+- "=="
+- !private "??"
 - "Array"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "Dir"
 - "HTTP11Request"
 - !private "HTTP11Response"
+- !private "HTTP2PrefaceValidator"
+- !private "HTTP2Session"
 - "HTTPFilterPriority"
-- !private "HTTPRequest"
+- "HTTPRequest"
 - "HTTPRequestFilter"
-- !private "HTTPResponse"
+- "HTTPResponse"
 - "HTTPResponseFilter"
 - "HTTPServer"
 - !private "IPPROTO_TCP"
@@ -45,10 +50,22 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - !private "compatRoutes"
 - !private "setsockopt"
+- !private "~="
 depends-member:
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "RawValue"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "_toAnyHashable"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "deinit"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "hashValue"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "http11"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "http2"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "init"]
+- ["OC17PerfectHTTPServer10HTTPServer11ALPNSupport", "rawValue"]
+- ["Ps9AnyObject", "ALPNSupport"]
 - !private ["Ps9AnyObject", "Dir"]
 - !private ["Ps9AnyObject", "HTTP11Request"]
 - !private ["Ps9AnyObject", "HTTP11Response"]
+- !private ["Ps9AnyObject", "HTTP2PrefaceValidator"]
+- !private ["Ps9AnyObject", "HTTP2Session"]
 - !private ["Ps9AnyObject", "HTTPFilterPriority"]
 - ["Ps9AnyObject", "HTTPRequestFilter"]
 - ["Ps9AnyObject", "HTTPResponseFilter"]
@@ -66,6 +83,8 @@ depends-member:
 - !private ["Ps9AnyObject", "Threading"]
 - !private ["Ps9AnyObject", "UInt32"]
 - !private ["Ps9AnyObject", "addRoutes"]
+- !private ["Ps9AnyObject", "alpnNegotiated"]
+- !private ["Ps9AnyObject", "alpnSupport"]
 - !private ["Ps9AnyObject", "bind"]
 - !private ["Ps9AnyObject", "caCert"]
 - !private ["Ps9AnyObject", "certVerifyMode"]
@@ -76,9 +95,11 @@ depends-member:
 - !private ["Ps9AnyObject", "completedCallback"]
 - !private ["Ps9AnyObject", "connection"]
 - !private ["Ps9AnyObject", "documentRoot"]
+- !private ["Ps9AnyObject", "enableALPN"]
 - !private ["Ps9AnyObject", "errorCode"]
 - !private ["Ps9AnyObject", "errorStr"]
 - !private ["Ps9AnyObject", "fd"]
+- !private ["Ps9AnyObject", "filterAndRun"]
 - !private ["Ps9AnyObject", "filterRequest"]
 - !private ["Ps9AnyObject", "flush"]
 - !private ["Ps9AnyObject", "forEachAccept"]
@@ -86,6 +107,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isKeepAlive"]
 - !private ["Ps9AnyObject", "listen"]
+- !private ["Ps9AnyObject", "localAddress"]
 - !private ["Ps9AnyObject", "net"]
 - !private ["Ps9AnyObject", "readRequest"]
 - !private ["Ps9AnyObject", "requestFilters"]
@@ -100,7 +122,6 @@ depends-member:
 - !private ["Ps9AnyObject", "serverPort"]
 - !private ["Ps9AnyObject", "setClientCA"]
 - !private ["Ps9AnyObject", "setsockopt"]
-- !private ["Ps9AnyObject", "sockName"]
 - !private ["Ps9AnyObject", "ssl"]
 - !private ["Ps9AnyObject", "start"]
 - !private ["Ps9AnyObject", "startInner"]
@@ -119,11 +140,13 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "isEmpty"]
 - !private ["Ps23BidirectionalCollection", "makeIterator"]
 - !private ["Ps23BidirectionalCollection", "map"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "init"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "filter"]
+- !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isEmpty"]
 - !private ["Ps7CVarArg", "makeIterator"]
@@ -134,6 +157,7 @@ depends-member:
 - !private ["Ps10Collection", "isEmpty"]
 - !private ["Ps10Collection", "makeIterator"]
 - !private ["Ps10Collection", "map"]
+- !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "filter"]
@@ -142,10 +166,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "makeIterator"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "filter"]
+- !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "isEmpty"]
 - !private ["Ps17CustomReflectable", "makeIterator"]
@@ -155,6 +181,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "filter"]
 - !private ["Ps23CustomStringConvertible", "findHandler"]
 - !private ["Ps23CustomStringConvertible", "get"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
 - !private ["Ps23CustomStringConvertible", "makeIterator"]
@@ -165,12 +192,18 @@ depends-member:
 - !private ["V10PerfectLib3Dir", "exists"]
 - !private ["V10PerfectLib3Dir", "init"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "get"]
+- ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "high"]
+- ["Ps9Equatable", "http11"]
+- !private ["Ps9Equatable", "http2"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "low"]
 - !private ["Ps9Equatable", "medium"]
+- ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "sslVerifyNone"]
+- ["Ps9Equatable", ""]
 - !private ["Ps5Error", "networkError"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "filter"]
@@ -181,6 +214,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "sslVerifyNone"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -195,6 +229,10 @@ depends-member:
 - !private ["C17PerfectHTTPServer14HTTP11Response", "flush"]
 - !private ["C17PerfectHTTPServer14HTTP11Response", "init"]
 - !private ["C17PerfectHTTPServer14HTTP11Response", "isKeepAlive"]
+- !private ["P17PerfectHTTPServer18HTTP2FrameReceiver", "init"]
+- !private ["P17PerfectHTTPServer21HTTP2NetErrorDelegate", "init"]
+- !private ["V17PerfectHTTPServer21HTTP2PrefaceValidator", "init"]
+- !private ["C17PerfectHTTPServer12HTTP2Session", "init"]
 - !private ["O11PerfectHTTP18HTTPFilterPriority", "high"]
 - !private ["O11PerfectHTTP18HTTPFilterPriority", "low"]
 - !private ["O11PerfectHTTP18HTTPFilterPriority", "medium"]
@@ -203,6 +241,7 @@ depends-member:
 - !private ["P11PerfectHTTP11HTTPRequest", "documentRoot"]
 - !private ["P11PerfectHTTP11HTTPRequest", "init"]
 - !private ["P11PerfectHTTP11HTTPRequest", "path"]
+- !private ["P11PerfectHTTP11HTTPRequest", "pathComponents"]
 - !private ["P11PerfectHTTP11HTTPRequest", "readRequest"]
 - !private ["P11PerfectHTTP11HTTPRequest", "serverName"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "filter"]
@@ -218,13 +257,16 @@ depends-member:
 - !private ["P11PerfectHTTP12HTTPResponse", "status"]
 - !private ["O11PerfectHTTP18HTTPResponseStatus", "notFound"]
 - !private ["O11PerfectHTTP18HTTPResponseStatus", "ok"]
+- ["C17PerfectHTTPServer10HTTPServer", "ALPNSupport"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "Dir"]
 - ["C17PerfectHTTPServer10HTTPServer", "HTTP11Request"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "HTTP11Response"]
+- !private ["C17PerfectHTTPServer10HTTPServer", "HTTP2PrefaceValidator"]
+- !private ["C17PerfectHTTPServer10HTTPServer", "HTTP2Session"]
 - ["C17PerfectHTTPServer10HTTPServer", "HTTPFilterPriority"]
-- !private ["C17PerfectHTTPServer10HTTPServer", "HTTPRequest"]
+- ["C17PerfectHTTPServer10HTTPServer", "HTTPRequest"]
 - ["C17PerfectHTTPServer10HTTPServer", "HTTPRequestFilter"]
-- !private ["C17PerfectHTTPServer10HTTPServer", "HTTPResponse"]
+- ["C17PerfectHTTPServer10HTTPServer", "HTTPResponse"]
 - ["C17PerfectHTTPServer10HTTPServer", "HTTPResponseFilter"]
 - ["C17PerfectHTTPServer10HTTPServer", "HTTPServer"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "IPPROTO_TCP"]
@@ -246,6 +288,7 @@ depends-member:
 - ["C17PerfectHTTPServer10HTTPServer", "UInt16"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "UInt32"]
 - ["C17PerfectHTTPServer10HTTPServer", "addRoutes"]
+- ["C17PerfectHTTPServer10HTTPServer", "alpnSupport"]
 - ["C17PerfectHTTPServer10HTTPServer", "bind"]
 - ["C17PerfectHTTPServer10HTTPServer", "caCert"]
 - ["C17PerfectHTTPServer10HTTPServer", "certVerifyMode"]
@@ -253,12 +296,13 @@ depends-member:
 - !private ["C17PerfectHTTPServer10HTTPServer", "compatRoutes"]
 - ["C17PerfectHTTPServer10HTTPServer", "deinit"]
 - ["C17PerfectHTTPServer10HTTPServer", "documentRoot"]
+- ["C17PerfectHTTPServer10HTTPServer", "filterAndRun"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "filterRequest"]
 - ["C17PerfectHTTPServer10HTTPServer", "handleConnection"]
 - ["C17PerfectHTTPServer10HTTPServer", "init"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "net"]
-- !private ["C17PerfectHTTPServer10HTTPServer", "requestFilters"]
-- !private ["C17PerfectHTTPServer10HTTPServer", "responseFilters"]
+- ["C17PerfectHTTPServer10HTTPServer", "requestFilters"]
+- ["C17PerfectHTTPServer10HTTPServer", "responseFilters"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "routeNavigator"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "routeRequest"]
 - !private ["C17PerfectHTTPServer10HTTPServer", "routes"]
@@ -275,19 +319,29 @@ depends-member:
 - !private ["C17PerfectHTTPServer10HTTPServer", "startInner"]
 - ["C17PerfectHTTPServer10HTTPServer", "stop"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "get"]
+- ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "high"]
+- ["Ps8Hashable", "http11"]
+- !private ["Ps8Hashable", "http2"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "low"]
 - !private ["Ps8Hashable", "medium"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", ""]
 - !private ["Vs16IndexingIterator", "next"]
+- !private ["Si", "hashValue"]
 - !private ["Vs5Int32", "init"]
+- !private ["Ps7Integer", "hashValue"]
 - !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "next"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "append"]
 - !private ["P10PerfectLib15JSONConvertible", "filter"]
+- !private ["P10PerfectLib15JSONConvertible", "hashValue"]
 - ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "isEmpty"]
 - !private ["P10PerfectLib15JSONConvertible", "makeIterator"]
@@ -297,6 +351,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Os12MemoryLayout", "size"]
+- !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "filter"]
@@ -310,23 +365,44 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["C10PerfectNet3Net", "alpnNegotiated"]
+- !private ["C10PerfectNet3Net", "bind"]
+- !private ["C10PerfectNet3Net", "checkPrivateKey"]
+- !private ["C10PerfectNet3Net", "cipherList"]
+- !private ["C10PerfectNet3Net", "close"]
+- !private ["C10PerfectNet3Net", "enableALPN"]
+- !private ["C10PerfectNet3Net", "errorCode"]
+- !private ["C10PerfectNet3Net", "errorStr"]
+- !private ["C10PerfectNet3Net", "fd"]
+- !private ["C10PerfectNet3Net", "forEachAccept"]
+- !private ["C10PerfectNet3Net", "init"]
+- !private ["C10PerfectNet3Net", "listen"]
+- !private ["C10PerfectNet3Net", "localAddress"]
+- !private ["C10PerfectNet3Net", "setClientCA"]
+- !private ["C10PerfectNet3Net", "useCertificateChainFile"]
+- !private ["C10PerfectNet3Net", "usePrivateKeyFile"]
+- !private ["V10PerfectNet10NetAddress", "host"]
+- !private ["C10PerfectNet6NetTCP", "alpnNegotiated"]
 - !private ["C10PerfectNet6NetTCP", "bind"]
 - !private ["C10PerfectNet6NetTCP", "checkPrivateKey"]
 - !private ["C10PerfectNet6NetTCP", "cipherList"]
 - !private ["C10PerfectNet6NetTCP", "close"]
+- !private ["C10PerfectNet6NetTCP", "enableALPN"]
 - !private ["C10PerfectNet6NetTCP", "errorCode"]
 - !private ["C10PerfectNet6NetTCP", "errorStr"]
 - !private ["C10PerfectNet6NetTCP", "fd"]
 - !private ["C10PerfectNet6NetTCP", "forEachAccept"]
 - !private ["C10PerfectNet6NetTCP", "init"]
 - !private ["C10PerfectNet6NetTCP", "listen"]
+- !private ["C10PerfectNet6NetTCP", "localAddress"]
 - !private ["C10PerfectNet6NetTCP", "setClientCA"]
-- !private ["C10PerfectNet6NetTCP", "sockName"]
 - !private ["C10PerfectNet6NetTCP", "useCertificateChainFile"]
 - !private ["C10PerfectNet6NetTCP", "usePrivateKeyFile"]
+- !private ["C10PerfectNet9NetTCPSSL", "alpnNegotiated"]
 - !private ["C10PerfectNet9NetTCPSSL", "bind"]
 - !private ["C10PerfectNet9NetTCPSSL", "checkPrivateKey"]
 - !private ["C10PerfectNet9NetTCPSSL", "cipherList"]
+- !private ["C10PerfectNet9NetTCPSSL", "enableALPN"]
 - !private ["C10PerfectNet9NetTCPSSL", "errorCode"]
 - !private ["C10PerfectNet9NetTCPSSL", "errorStr"]
 - !private ["C10PerfectNet9NetTCPSSL", "init"]
@@ -349,7 +425,14 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "isEmpty"]
 - !private ["Ps26RangeReplaceableCollection", "makeIterator"]
 - !private ["Ps26RangeReplaceableCollection", "map"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "http11"]
+- !private ["Ps16RawRepresentable", "http2"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "sslVerifyNone"]
+- ["Ps16RawRepresentable", ""]
 - !private ["P11PerfectHTTP14RouteNavigator", "findHandler"]
 - !private ["V11PerfectHTTP6Routes", "add"]
 - ["V11PerfectHTTP6Routes", "init"]
@@ -362,11 +445,14 @@ depends-member:
 - !private ["Ps8Sequence", "map"]
 - !private ["Ps8Sequence", "next"]
 - !private ["Ps10SetAlgebra", "sslVerifyNone"]
+- !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["V10PerfectNet20SocketFileDescriptor", "fd"]
 - !private ["V11PerfectHTTP17StaticFileHandler", "handleRequest"]
 - !private ["V11PerfectHTTP17StaticFileHandler", "init"]
+- !private ["Ps10Strideable", "hashValue"]
 - !private ["Ps10Strideable", "init"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
@@ -395,6 +481,7 @@ depends-member:
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
@@ -402,11 +489,18 @@ depends-member:
 - ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "get"]
+- ["Ps9_Hashable", "hashValue"]
 - !private ["Ps9_Hashable", "high"]
+- ["Ps9_Hashable", "http11"]
+- !private ["Ps9_Hashable", "http2"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "low"]
 - !private ["Ps9_Hashable", "medium"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps14_Incrementable", "init"]
 - !private ["Ps10_Indexable", "append"]
 - !private ["Ps10_Indexable", "filter"]
@@ -420,7 +514,9 @@ depends-member:
 - !private ["Ps14_IndexableBase", "isEmpty"]
 - !private ["Ps14_IndexableBase", "makeIterator"]
 - !private ["Ps14_IndexableBase", "map"]
+- !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps17_MutableIndexable", "append"]
 - !private ["Ps17_MutableIndexable", "filter"]
@@ -431,6 +527,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "filter"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
 - !private ["Ps21_ObjectiveCBridgeable", "makeIterator"]
@@ -447,9 +544,12 @@ depends-member:
 - !private ["Ps26_RangeReplaceableIndexable", "isEmpty"]
 - !private ["Ps26_RangeReplaceableIndexable", "makeIterator"]
 - !private ["Ps26_RangeReplaceableIndexable", "map"]
+- !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "hashValue"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
+- "OC17PerfectHTTPServer10HTTPServer11ALPNSupport"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23BidirectionalCollection"
@@ -474,6 +574,10 @@ depends-nominal:
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "C17PerfectHTTPServer13HTTP11Request"
 - !private "C17PerfectHTTPServer14HTTP11Response"
+- !private "P17PerfectHTTPServer18HTTP2FrameReceiver"
+- !private "P17PerfectHTTPServer21HTTP2NetErrorDelegate"
+- !private "V17PerfectHTTPServer21HTTP2PrefaceValidator"
+- !private "C17PerfectHTTPServer12HTTP2Session"
 - !private "O11PerfectHTTP18HTTPFilterPriority"
 - !private "O11PerfectHTTP10HTTPMethod"
 - !private "P11PerfectHTTP11HTTPRequest"
@@ -484,6 +588,7 @@ depends-nominal:
 - "C17PerfectHTTPServer10HTTPServer"
 - "Ps8Hashable"
 - !private "Vs16IndexingIterator"
+- !private "Si"
 - !private "Vs5Int32"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
@@ -500,6 +605,8 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "C10PerfectNet3Net"
+- !private "V10PerfectNet10NetAddress"
 - !private "C10PerfectNet6NetTCP"
 - !private "C10PerfectNet9NetTCPSSL"
 - !private "V10PerfectNet17OpenSSLVerifyMode"
@@ -508,7 +615,7 @@ depends-nominal:
 - !private "V10PerfectLib13PerfectServer"
 - "Ps22RandomAccessCollection"
 - "Ps26RangeReplaceableCollection"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
 - !private "P11PerfectHTTP14RouteNavigator"
 - "V11PerfectHTTP6Routes"
 - "Ps8Sequence"
@@ -562,6 +669,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -581,17 +689,21 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
@@ -606,10 +718,12 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
-interface-hash: "7e71f5b4de734986cdfa93133f8c15e1"
+interface-hash: "39bba0fb26f1452d6bcd46118a19d020"

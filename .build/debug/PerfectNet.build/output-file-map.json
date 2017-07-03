@@ -8,6 +8,12 @@
     "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/Net~partial.swiftmodule",
     "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/Net.swiftdeps"
   },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetAddress.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetAddress.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetAddress.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetAddress~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetAddress.swiftdeps"
+  },
   "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetEvent.swift": {
     "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetEvent.d",
     "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetEvent.swift.o",
@@ -31,5 +37,11 @@
     "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetTCPSSL.swift.o",
     "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetTCPSSL~partial.swiftmodule",
     "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetTCPSSL.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetUDP.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetUDP.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetUDP.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetUDP~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.build/NetUDP.swiftdeps"
   }
 }

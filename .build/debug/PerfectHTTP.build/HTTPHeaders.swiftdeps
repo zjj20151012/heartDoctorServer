@@ -65,6 +65,8 @@ depends-member:
 - ["Ps9Equatable", "acceptDatetime"]
 - ["Ps9Equatable", "acceptEncoding"]
 - ["Ps9Equatable", "acceptLanguage"]
+- ["Ps9Equatable", "accessControlRequestHeaders"]
+- ["Ps9Equatable", "accessControlRequestMethod"]
 - ["Ps9Equatable", "authorization"]
 - ["Ps9Equatable", "cacheControl"]
 - ["Ps9Equatable", "connection"]
@@ -109,6 +111,7 @@ depends-member:
 - ["Ps9Equatable", "xForwardedHost"]
 - ["Ps9Equatable", "xForwardedProto"]
 - ["Ps9Equatable", "xHttpMethodOverride"]
+- ["Ps9Equatable", "xRequestedBy"]
 - ["Ps9Equatable", "xRequestedWith"]
 - ["Ps9Equatable", "xUIDH"]
 - ["Ps9Equatable", "xWapProfile"]
@@ -141,6 +144,8 @@ depends-member:
 - ["Ps8Hashable", "acceptDatetime"]
 - ["Ps8Hashable", "acceptEncoding"]
 - ["Ps8Hashable", "acceptLanguage"]
+- ["Ps8Hashable", "accessControlRequestHeaders"]
+- ["Ps8Hashable", "accessControlRequestMethod"]
 - ["Ps8Hashable", "authorization"]
 - ["Ps8Hashable", "cacheControl"]
 - ["Ps8Hashable", "connection"]
@@ -185,6 +190,7 @@ depends-member:
 - ["Ps8Hashable", "xForwardedHost"]
 - ["Ps8Hashable", "xForwardedProto"]
 - ["Ps8Hashable", "xHttpMethodOverride"]
+- ["Ps8Hashable", "xRequestedBy"]
 - ["Ps8Hashable", "xRequestedWith"]
 - ["Ps8Hashable", "xUIDH"]
 - ["Ps8Hashable", "xWapProfile"]
@@ -230,6 +236,8 @@ depends-member:
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "acceptDatetime"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "acceptEncoding"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "acceptLanguage"]
+- ["OO11PerfectHTTP17HTTPRequestHeader4Name", "accessControlRequestHeaders"]
+- ["OO11PerfectHTTP17HTTPRequestHeader4Name", "accessControlRequestMethod"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "authorization"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "cacheControl"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "connection"]
@@ -274,6 +282,7 @@ depends-member:
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xForwardedHost"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xForwardedProto"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xHttpMethodOverride"]
+- ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xRequestedBy"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xRequestedWith"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xUIDH"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "xWapProfile"]
@@ -282,7 +291,10 @@ depends-member:
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "String"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "acceptPatch"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "acceptRanges"]
+- ["OO11PerfectHTTP18HTTPResponseHeader4Name", "accessControlAllowCredentials"]
+- ["OO11PerfectHTTP18HTTPResponseHeader4Name", "accessControlAllowMethods"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "accessControlAllowOrigin"]
+- ["OO11PerfectHTTP18HTTPResponseHeader4Name", "accessControlMaxAge"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "age"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "allow"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "altSvc"]
@@ -373,6 +385,8 @@ depends-member:
 - ["Ps9_Hashable", "acceptDatetime"]
 - ["Ps9_Hashable", "acceptEncoding"]
 - ["Ps9_Hashable", "acceptLanguage"]
+- ["Ps9_Hashable", "accessControlRequestHeaders"]
+- ["Ps9_Hashable", "accessControlRequestMethod"]
 - ["Ps9_Hashable", "authorization"]
 - ["Ps9_Hashable", "cacheControl"]
 - ["Ps9_Hashable", "connection"]
@@ -417,6 +431,7 @@ depends-member:
 - ["Ps9_Hashable", "xForwardedHost"]
 - ["Ps9_Hashable", "xForwardedProto"]
 - ["Ps9_Hashable", "xHttpMethodOverride"]
+- ["Ps9_Hashable", "xRequestedBy"]
 - ["Ps9_Hashable", "xRequestedWith"]
 - ["Ps9_Hashable", "xUIDH"]
 - ["Ps9_Hashable", "xWapProfile"]
@@ -488,6 +503,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -536,4 +552,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
-interface-hash: "a9d05874a809c914e764b9bcc742b24f"
+interface-hash: "30feb98f4cc6847d2f9fdc68e7b2f41c"

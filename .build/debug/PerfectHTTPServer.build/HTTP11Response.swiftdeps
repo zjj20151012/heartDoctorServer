@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "&&"
+- !private "+"
 - !private "..<"
 - !private "=="
 - !private ">"
@@ -45,6 +46,7 @@ depends-member:
 - ["Ps9AnyObject", "addHeader"]
 - !private ["Ps9AnyObject", "append"]
 - ["Ps9AnyObject", "bodyBytes"]
+- !private ["Ps9AnyObject", "bodyPrefix"]
 - !private ["Ps9AnyObject", "close"]
 - ["Ps9AnyObject", "completed"]
 - !private ["Ps9AnyObject", "completedCallback"]
@@ -144,6 +146,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "reversed"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "append"]
 - !private ["Ps9Equatable", "connection"]
@@ -161,6 +164,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "reversed"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "append"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lowercased"]
@@ -189,6 +193,7 @@ depends-member:
 - ["C17PerfectHTTPServer14HTTP11Response", "abort"]
 - ["C17PerfectHTTPServer14HTTP11Response", "addHeader"]
 - ["C17PerfectHTTPServer14HTTP11Response", "bodyBytes"]
+- ["C17PerfectHTTPServer14HTTP11Response", "bodyPrefix"]
 - ["C17PerfectHTTPServer14HTTP11Response", "completed"]
 - ["C17PerfectHTTPServer14HTTP11Response", "completedCallback"]
 - ["C17PerfectHTTPServer14HTTP11Response", "connection"]
@@ -219,6 +224,7 @@ depends-member:
 - !private ["P11PerfectHTTP11HTTPRequest", "connection"]
 - !private ["P11PerfectHTTP11HTTPRequest", "header"]
 - !private ["P11PerfectHTTP11HTTPRequest", "protocolVersion"]
+- !private ["P11PerfectHTTP11HTTPRequest", "scratchPad"]
 - !private ["P11PerfectHTTP12HTTPResponse", "AnyIterator"]
 - ["P11PerfectHTTP12HTTPResponse", "Array"]
 - ["P11PerfectHTTP12HTTPResponse", "HTTPResponseStatus"]
@@ -229,6 +235,7 @@ depends-member:
 - !private ["P11PerfectHTTP12HTTPResponse", "abort"]
 - ["P11PerfectHTTP12HTTPResponse", "addHeader"]
 - ["P11PerfectHTTP12HTTPResponse", "bodyBytes"]
+- !private ["P11PerfectHTTP12HTTPResponse", "bodyPrefix"]
 - ["P11PerfectHTTP12HTTPResponse", "completed"]
 - !private ["P11PerfectHTTP12HTTPResponse", "completedCallback"]
 - !private ["P11PerfectHTTP12HTTPResponse", "connection"]
@@ -330,6 +337,8 @@ depends-member:
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "contentLength"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "standardName"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "transferEncoding"]
+- !private ["C10PerfectNet3Net", "close"]
+- !private ["C10PerfectNet3Net", "write"]
 - !private ["C10PerfectNet6NetTCP", "close"]
 - !private ["C10PerfectNet6NetTCP", "write"]
 - !private ["Ps22RandomAccessCollection", "append"]
@@ -480,9 +489,11 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
 - !private "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -509,6 +520,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "OO11PerfectHTTP17HTTPRequestHeader4Name"
 - !private "OO11PerfectHTTP18HTTPResponseHeader4Name"
+- !private "C10PerfectNet3Net"
 - !private "C10PerfectNet6NetTCP"
 - "Ps22RandomAccessCollection"
 - "Ps26RangeReplaceableCollection"
@@ -548,6 +560,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -567,17 +580,21 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
@@ -592,10 +609,12 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
-interface-hash: "9fe148aad771b80655f89ff605c3031f"
+interface-hash: "852b380d63c9c95893fd0d5ea2f00d6e"

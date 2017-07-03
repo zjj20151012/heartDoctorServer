@@ -24,11 +24,13 @@ provides-member:
 - ["P11PerfectHTTP12HTTPResponse", "setBody"]
 - ["P11PerfectHTTP12HTTPResponse", "setBody"]
 - ["P11PerfectHTTP12HTTPResponse", "addCookie"]
+- ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["Sd", "now"]
 - ["Sd", "formatDate"]
 - ["Si", "secondsToDate"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "*"
 - !private "+"
 - !private "/"
@@ -38,7 +40,7 @@ depends-top-level:
 - "AnyIterator"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - "CustomStringConvertible"
 - "Double"
 - "HTTPCookie"
@@ -48,12 +50,14 @@ depends-top-level:
 - "HTTPResponseStatus"
 - "Int"
 - !private "Int8"
+- "JSONConvertible"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "TernaryPrecedence"
 - "UInt8"
 - !private "UnicodeScalarType"
 - !private "UnsafeMutablePointer"
+- !private "applicationJson"
 - !private "gettimeofday"
 - !private "gmtime_r"
 - !private "strftime"
@@ -76,7 +80,7 @@ depends-member:
 - !private ["Ps16AbsoluteValuable", "timeval"]
 - !private ["Ps16AbsoluteValuable", "tm"]
 - !private ["Ps9AnyObject", "append"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "stringByEncodingURL"]
 - !private ["Ps9AnyObject", "utf8"]
 - !private ["Sa", "append"]
@@ -114,8 +118,7 @@ depends-member:
 - !private ["Ps7CVarArg", "gettimeofday"]
 - !private ["Ps7CVarArg", "gmtime_r"]
 - !private ["Ps7CVarArg", "hashValue"]
-- !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "jsonEncodedString"]
+- ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "now"]
 - !private ["Ps7CVarArg", "removeAll"]
 - !private ["Ps7CVarArg", "secondsToDate"]
@@ -127,7 +130,6 @@ depends-member:
 - !private ["Ps7CVarArg", "utf8"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
-- !private ["Ps10Collection", "jsonEncodedString"]
 - !private ["Ps10Collection", "removeAll"]
 - !private ["Ps10Comparable", "Double"]
 - !private ["Ps10Comparable", "Int"]
@@ -140,7 +142,7 @@ depends-member:
 - !private ["Ps10Comparable", "gettimeofday"]
 - !private ["Ps10Comparable", "gmtime_r"]
 - !private ["Ps10Comparable", "hashValue"]
-- !private ["Ps10Comparable", "init"]
+- ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "now"]
 - !private ["Ps10Comparable", "secondsToDate"]
 - !private ["Ps10Comparable", "strftime"]
@@ -159,8 +161,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "formatDate"]
 - !private ["Ps28CustomDebugStringConvertible", "gettimeofday"]
 - !private ["Ps28CustomDebugStringConvertible", "gmtime_r"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "jsonEncodedString"]
+- ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "lax"]
 - !private ["Ps28CustomDebugStringConvertible", "now"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAll"]
@@ -182,7 +183,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "gettimeofday"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "gmtime_r"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "now"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "secondsToDate"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "strftime"]
@@ -203,8 +204,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "gettimeofday"]
 - !private ["Ps17CustomReflectable", "gmtime_r"]
 - !private ["Ps17CustomReflectable", "hashValue"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "jsonEncodedString"]
+- ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "lax"]
 - !private ["Ps17CustomReflectable", "now"]
 - !private ["Ps17CustomReflectable", "removeAll"]
@@ -239,9 +239,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "gone"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "httpVersionNotSupported"]
-- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "internalServerError"]
-- !private ["Ps23CustomStringConvertible", "jsonEncodedString"]
 - ["Ps23CustomStringConvertible", "lengthRequired"]
 - ["Ps23CustomStringConvertible", "methodNotAllowed"]
 - ["Ps23CustomStringConvertible", "movedPermanently"]
@@ -279,7 +278,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "useProxy"]
 - !private ["Ps23CustomStringConvertible", "utf8"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "jsonEncodedString"]
 - ["Sd", "Double"]
 - !private ["Sd", "Int"]
 - !private ["Sd", "Int8"]
@@ -307,7 +305,7 @@ depends-member:
 - !private ["Ps9Equatable", "gettimeofday"]
 - !private ["Ps9Equatable", "gmtime_r"]
 - ["Ps9Equatable", "hashValue"]
-- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "lax"]
 - !private ["Ps9Equatable", "now"]
 - !private ["Ps9Equatable", "secondsToDate"]
@@ -328,9 +326,8 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "removeAll"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "jsonEncodedString"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "append"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "stringByEncodingURL"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "utf8"]
 - !private ["Ps25ExpressibleByFloatLiteral", "Double"]
@@ -363,11 +360,11 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "tm"]
 - !private ["Ps23ExpressibleByNilLiteral", "lax"]
 - !private ["Ps26ExpressibleByStringLiteral", "append"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "stringByEncodingURL"]
 - !private ["Ps26ExpressibleByStringLiteral", "utf8"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "append"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "stringByEncodingURL"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "utf8"]
 - !private ["Ps13FloatingPoint", "Double"]
@@ -404,11 +401,14 @@ depends-member:
 - ["P11PerfectHTTP12HTTPResponse", "HTTPRequest"]
 - ["P11PerfectHTTP12HTTPResponse", "HTTPResponseHeader"]
 - ["P11PerfectHTTP12HTTPResponse", "HTTPResponseStatus"]
+- ["P11PerfectHTTP12HTTPResponse", "JSONConvertible"]
+- ["P11PerfectHTTP12HTTPResponse", "Self"]
 - ["P11PerfectHTTP12HTTPResponse", "String"]
 - ["P11PerfectHTTP12HTTPResponse", "UInt8"]
 - ["P11PerfectHTTP12HTTPResponse", "addCookie"]
 - ["P11PerfectHTTP12HTTPResponse", "addHeader"]
 - ["P11PerfectHTTP12HTTPResponse", "appendBody"]
+- !private ["P11PerfectHTTP12HTTPResponse", "applicationJson"]
 - ["P11PerfectHTTP12HTTPResponse", "bodyBytes"]
 - ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["P11PerfectHTTP12HTTPResponse", "header"]
@@ -481,7 +481,7 @@ depends-member:
 - !private ["Ps8Hashable", "gettimeofday"]
 - !private ["Ps8Hashable", "gmtime_r"]
 - ["Ps8Hashable", "hashValue"]
-- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "lax"]
 - !private ["Ps8Hashable", "now"]
 - !private ["Ps8Hashable", "secondsToDate"]
@@ -514,7 +514,7 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "gettimeofday"]
 - !private ["P10PerfectLib15JSONConvertible", "gmtime_r"]
 - !private ["P10PerfectLib15JSONConvertible", "hashValue"]
-- !private ["P10PerfectLib15JSONConvertible", "init"]
+- ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "jsonEncodedString"]
 - !private ["P10PerfectLib15JSONConvertible", "lax"]
 - !private ["P10PerfectLib15JSONConvertible", "now"]
@@ -535,7 +535,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "formatDate"]
 - !private ["Ps25LosslessStringConvertible", "gettimeofday"]
 - !private ["Ps25LosslessStringConvertible", "gmtime_r"]
-- !private ["Ps25LosslessStringConvertible", "init"]
+- ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "now"]
 - !private ["Ps25LosslessStringConvertible", "strftime"]
 - !private ["Ps25LosslessStringConvertible", "stringByEncodingURL"]
@@ -546,7 +546,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "Double"]
 - !private ["Ps10MirrorPath", "append"]
 - !private ["Ps10MirrorPath", "hashValue"]
-- !private ["Ps10MirrorPath", "init"]
+- ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "secondsToDate"]
 - !private ["Ps10MirrorPath", "stringByEncodingURL"]
 - !private ["Ps10MirrorPath", "utf8"]
@@ -554,32 +554,33 @@ depends-member:
 - !private ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "removeAll"]
 - !private ["PSo8NSCoding", "append"]
-- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "stringByEncodingURL"]
 - !private ["PSo8NSCoding", "utf8"]
 - !private ["PSo9NSCopying", "append"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "stringByEncodingURL"]
 - !private ["PSo9NSCopying", "utf8"]
 - !private ["PSo16NSMutableCopying", "append"]
-- !private ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "stringByEncodingURL"]
 - !private ["PSo16NSMutableCopying", "utf8"]
 - !private ["CSo8NSObject", "append"]
 - !private ["CSo8NSObject", "stringByEncodingURL"]
 - !private ["CSo8NSObject", "utf8"]
 - !private ["PSo16NSObjectProtocol", "append"]
-- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "stringByEncodingURL"]
 - !private ["PSo16NSObjectProtocol", "utf8"]
 - !private ["PSo14NSSecureCoding", "append"]
-- !private ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "stringByEncodingURL"]
 - !private ["PSo14NSSecureCoding", "utf8"]
 - !private ["CSo8NSString", "append"]
-- !private ["CSo8NSString", "init"]
+- ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "stringByEncodingURL"]
 - !private ["CSo8NSString", "utf8"]
+- !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "contentType"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "setCookie"]
 - !private ["Sq", "lax"]
 - !private ["Ps22RandomAccessCollection", "append"]
@@ -596,7 +597,6 @@ depends-member:
 - ["OV11PerfectHTTP10HTTPCookie8SameSite", "strict"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
-- !private ["Ps8Sequence", "jsonEncodedString"]
 - !private ["Ps8Sequence", "removeAll"]
 - !private ["Ps13SignedInteger", "Double"]
 - !private ["Ps13SignedInteger", "hashValue"]
@@ -635,15 +635,15 @@ depends-member:
 - !private ["Ps10Strideable", "timeval"]
 - !private ["Ps10Strideable", "tm"]
 - !private ["SS", "append"]
-- !private ["SS", "init"]
+- ["SS", "init"]
 - !private ["SS", "stringByEncodingURL"]
 - !private ["SS", "utf8"]
 - !private ["Ps16TextOutputStream", "append"]
-- !private ["Ps16TextOutputStream", "init"]
+- ["Ps16TextOutputStream", "init"]
 - !private ["Ps16TextOutputStream", "stringByEncodingURL"]
 - !private ["Ps16TextOutputStream", "utf8"]
 - !private ["Ps20TextOutputStreamable", "append"]
-- !private ["Ps20TextOutputStreamable", "init"]
+- ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "stringByEncodingURL"]
 - !private ["Ps20TextOutputStreamable", "utf8"]
 - !private ["Sp", "allocate"]
@@ -685,7 +685,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "removeAll"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "append"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "stringByEncodingURL"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "utf8"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Double"]
@@ -717,23 +717,23 @@ depends-member:
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "timeval"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "tm"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "append"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "stringByEncodingURL"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "utf8"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "append"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "stringByEncodingURL"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "utf8"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "append"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "stringByEncodingURL"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "append"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "stringByEncodingURL"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "utf8"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "append"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "stringByEncodingURL"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "utf8"]
 - !private ["Ps9_Hashable", "Double"]
@@ -749,7 +749,7 @@ depends-member:
 - !private ["Ps9_Hashable", "gettimeofday"]
 - !private ["Ps9_Hashable", "gmtime_r"]
 - ["Ps9_Hashable", "hashValue"]
-- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "lax"]
 - !private ["Ps9_Hashable", "now"]
 - !private ["Ps9_Hashable", "secondsToDate"]
@@ -766,11 +766,9 @@ depends-member:
 - !private ["Ps14_Incrementable", "secondsToDate"]
 - !private ["Ps10_Indexable", "append"]
 - !private ["Ps10_Indexable", "init"]
-- !private ["Ps10_Indexable", "jsonEncodedString"]
 - !private ["Ps10_Indexable", "removeAll"]
 - !private ["Ps14_IndexableBase", "append"]
 - !private ["Ps14_IndexableBase", "init"]
-- !private ["Ps14_IndexableBase", "jsonEncodedString"]
 - !private ["Ps14_IndexableBase", "removeAll"]
 - !private ["Ps8_Integer", "Double"]
 - !private ["Ps8_Integer", "hashValue"]
@@ -793,8 +791,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "gettimeofday"]
 - !private ["Ps21_ObjectiveCBridgeable", "gmtime_r"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "jsonEncodedString"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "lax"]
 - !private ["Ps21_ObjectiveCBridgeable", "now"]
 - !private ["Ps21_ObjectiveCBridgeable", "removeAll"]
@@ -841,32 +838,30 @@ depends-member:
 - !private ["VSC2tm", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
-- !private "Ps9AnyObject"
+- "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - !private "Sb"
-- !private "Ps7CVarArg"
+- "Ps7CVarArg"
 - !private "Ps10Collection"
-- !private "Ps10Comparable"
-- !private "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- !private "Vs10Dictionary"
 - "Sd"
 - "Ps9Equatable"
 - "OV11PerfectHTTP10HTTPCookie10Expiration"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Ps13FloatingPoint"
 - "V11PerfectHTTP10HTTPCookie"
 - "P11PerfectHTTP12HTTPResponse"
@@ -876,17 +871,17 @@ depends-nominal:
 - "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
-- !private "P10PerfectLib15JSONConvertible"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
+- "P10PerfectLib15JSONConvertible"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- !private "PSo16NSMutableCopying"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - !private "OO11PerfectHTTP18HTTPResponseHeader4Name"
 - !private "Sq"
 - !private "Ps22RandomAccessCollection"
@@ -896,9 +891,9 @@ depends-nominal:
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- !private "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
 - !private "Sp"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps23_BidirectionalIndexable"
@@ -906,14 +901,14 @@ depends-nominal:
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps10_Indexable"
@@ -921,7 +916,7 @@ depends-nominal:
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - !private "Ps17_MutableIndexable"
-- !private "Ps21_ObjectiveCBridgeable"
+- "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps8_Pointer"
 - !private "Ps22_RandomAccessIndexable"
@@ -943,6 +938,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -991,4 +987,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
-interface-hash: "cdb35309ec0e71fcff2d873365cdb2ba"
+interface-hash: "02a55dc30d8be1fd99165e2516f69146"

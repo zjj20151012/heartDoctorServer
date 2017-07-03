@@ -1,5 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "39aa38cb358c49ce6732a180b694701b"
-build_time: [552034650, 104406000]
+options: "51046dba42f41f6b95d523de1b97d990"
+build_time: [552107300, 318040000]
 inputs:
-  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/main.swift": [552034568, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager.swift": [9223372036854775807, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/main.swift": [552046606, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/NetworkServerManager.swift": [9223372036854775807, 0]

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/Main.build/master.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/Main/main.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/Main.build/main.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/Main.build/main.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/Main.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/Main.build/main.swiftdeps"
+  }
+}

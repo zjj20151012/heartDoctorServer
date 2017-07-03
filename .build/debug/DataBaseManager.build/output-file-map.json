@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/master.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager/DatabaseManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.swiftdeps"
+  }
+}

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "df1b34e50514f6ae34d3585f40adc5b6"
+build_time: [552126924, 474830000]
+inputs:
+  "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-MySQL.git-4976130768219902098/Sources/MySQL/MySQL.swift": [552045022, 0]

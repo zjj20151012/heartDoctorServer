@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "568ca11ed23e6224311e60731f4dd6ea"
+build_time: [552387431, 286678000]
+inputs:
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/ServerManager/UserRegistServerManager.swift": [552387424, 0]

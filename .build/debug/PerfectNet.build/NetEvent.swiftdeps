@@ -15,11 +15,11 @@ depends-top-level:
 - !private "..<"
 - !private "=="
 - !private ">"
-- !private ">="
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
 - "Double"
+- !private "EINTR"
 - !private "ERROR"
 - "EVFILT_READ"
 - "EVFILT_TIMER"
@@ -54,6 +54,7 @@ depends-top-level:
 - !private "UInt16"
 - "UnicodeScalarType"
 - "UnsafeMutablePointer"
+- !private "errno"
 - !private "exit"
 - !private "getrlimit"
 - !private "invalidSocket"
@@ -69,6 +70,7 @@ depends-top-level:
 - !private "timespec"
 - !private "|"
 depends-member:
+- !private ["Ps9AnyObject", "EINTR"]
 - !private ["Ps9AnyObject", "EVFILT_READ"]
 - !private ["Ps9AnyObject", "EVFILT_TIMER"]
 - !private ["Ps9AnyObject", "EVFILT_WRITE"]
@@ -94,6 +96,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UInt16"]
 - !private ["Ps9AnyObject", "UnsafeMutablePointer"]
 - !private ["Ps9AnyObject", "debug"]
+- !private ["Ps9AnyObject", "errno"]
 - !private ["Ps9AnyObject", "event"]
 - !private ["Ps9AnyObject", "evlist"]
 - !private ["Ps9AnyObject", "getrlimit"]
@@ -186,6 +189,10 @@ depends-member:
 - !private ["Vs5Int32", "init"]
 - !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "removeValue"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - ["CV13PerfectThread9Threading4Lock", "init"]
 - !private ["CV13PerfectThread9Threading4Lock", "lock"]
 - !private ["CV13PerfectThread9Threading4Lock", "unlock"]
@@ -201,6 +208,7 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - ["C10PerfectNet8NetEvent", "Bool"]
 - ["C10PerfectNet8NetEvent", "Double"]
+- !private ["C10PerfectNet8NetEvent", "EINTR"]
 - !private ["C10PerfectNet8NetEvent", "EVFILT_READ"]
 - !private ["C10PerfectNet8NetEvent", "EVFILT_TIMER"]
 - !private ["C10PerfectNet8NetEvent", "EVFILT_WRITE"]
@@ -230,6 +238,7 @@ depends-member:
 - !private ["C10PerfectNet8NetEvent", "debug"]
 - ["C10PerfectNet8NetEvent", "deinit"]
 - !private ["C10PerfectNet8NetEvent", "emptyCallback"]
+- !private ["C10PerfectNet8NetEvent", "errno"]
 - ["C10PerfectNet8NetEvent", "event"]
 - !private ["C10PerfectNet8NetEvent", "evlist"]
 - !private ["C10PerfectNet8NetEvent", "getrlimit"]
@@ -351,6 +360,7 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
+- "P10PerfectLib15JSONConvertible"
 - "CV13PerfectThread9Threading4Lock"
 - !private "Ps25LosslessStringConvertible"
 - !private "Os12MemoryLayout"
@@ -411,10 +421,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectLib.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectThread.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"

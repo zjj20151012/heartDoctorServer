@@ -1,0 +1,246 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "mysql_host"
+- "mysql_user"
+- "mysql_password"
+- "mysql_database"
+- "table_account"
+- "DatabaseManager"
+provides-nominal:
+- "C15DataBaseManager15DatabaseManager"
+provides-member:
+- ["C15DataBaseManager15DatabaseManager", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "DatabaseManager"
+- "Dictionary"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "MySQL"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+- "mysql_database"
+- "mysql_host"
+- "mysql_password"
+- "mysql_user"
+- !private "print"
+- "table_account"
+depends-member:
+- !private ["Ps9AnyObject", "Dictionary"]
+- !private ["Ps9AnyObject", "MySQL"]
+- ["Ps9AnyObject", "Results"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "connect"]
+- !private ["Ps9AnyObject", "connectedDataBase"]
+- !private ["Ps9AnyObject", "errorMessage"]
+- !private ["Ps9AnyObject", "forEachRow"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mysql"]
+- !private ["Ps9AnyObject", "mysqlStatement"]
+- !private ["Ps9AnyObject", "mysql_database"]
+- !private ["Ps9AnyObject", "mysql_host"]
+- !private ["Ps9AnyObject", "mysql_password"]
+- !private ["Ps9AnyObject", "mysql_user"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "query"]
+- !private ["Ps9AnyObject", "selectAllDatabaseSQL"]
+- !private ["Ps9AnyObject", "selectDatabase"]
+- !private ["Ps9AnyObject", "storeResults"]
+- !private ["Ps9AnyObject", "table_account"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["C15DataBaseManager15DatabaseManager", "Bool"]
+- ["C15DataBaseManager15DatabaseManager", "Dictionary"]
+- ["C15DataBaseManager15DatabaseManager", "MySQL"]
+- ["C15DataBaseManager15DatabaseManager", "String"]
+- !private ["C15DataBaseManager15DatabaseManager", "connectedDataBase"]
+- ["C15DataBaseManager15DatabaseManager", "deinit"]
+- ["C15DataBaseManager15DatabaseManager", "deleteDatabaseSQL"]
+- ["C15DataBaseManager15DatabaseManager", "init"]
+- ["C15DataBaseManager15DatabaseManager", "insertDatabaseSQL"]
+- !private ["C15DataBaseManager15DatabaseManager", "mysql"]
+- ["C15DataBaseManager15DatabaseManager", "mysqlGetHomeDataResult"]
+- ["C15DataBaseManager15DatabaseManager", "mysqlStatement"]
+- !private ["C15DataBaseManager15DatabaseManager", "mysql_database"]
+- !private ["C15DataBaseManager15DatabaseManager", "mysql_host"]
+- !private ["C15DataBaseManager15DatabaseManager", "mysql_password"]
+- !private ["C15DataBaseManager15DatabaseManager", "mysql_user"]
+- !private ["C15DataBaseManager15DatabaseManager", "print"]
+- ["C15DataBaseManager15DatabaseManager", "selectAllDataBaseSQLwhere"]
+- ["C15DataBaseManager15DatabaseManager", "selectAllDatabaseSQL"]
+- !private ["C15DataBaseManager15DatabaseManager", "table_account"]
+- ["C15DataBaseManager15DatabaseManager", "updateDatabaseSQL"]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps16IteratorProtocol", "forEachRow"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
+- ["C5MySQL5MySQL", "Results"]
+- !private ["C5MySQL5MySQL", "connect"]
+- !private ["C5MySQL5MySQL", "errorMessage"]
+- !private ["C5MySQL5MySQL", "init"]
+- !private ["C5MySQL5MySQL", "query"]
+- !private ["C5MySQL5MySQL", "selectDatabase"]
+- !private ["C5MySQL5MySQL", "storeResults"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["CC5MySQL5MySQL7Results", "forEachRow"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C15DataBaseManager15DatabaseManager"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps16IteratorProtocol"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "C5MySQL5MySQL"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "CC5MySQL5MySQL7Results"
+- !private "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/MySQL.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/typelib.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_alloc.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_command.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_time.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/psi/psi_base.h"
+- "/usr/local/include/mysql/mysql.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_com.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/client_plugin.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_version.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/plugin_auth_common.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/binary_log_types.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_list.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/psi/psi_memory.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-mysqlclient.git-5333716826204139417/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
+interface-hash: "0f3dd33291c360b9a68678a914ad1323"

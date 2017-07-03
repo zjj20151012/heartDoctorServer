@@ -44,6 +44,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "head"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "options"]
+- ["Ps23CustomStringConvertible", "patch"]
 - ["Ps23CustomStringConvertible", "post"]
 - ["Ps23CustomStringConvertible", "put"]
 - ["Ps23CustomStringConvertible", "trace"]
@@ -59,6 +60,7 @@ depends-member:
 - ["Ps9Equatable", "head"]
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "options"]
+- ["Ps9Equatable", "patch"]
 - ["Ps9Equatable", "post"]
 - ["Ps9Equatable", "put"]
 - ["Ps9Equatable", "trace"]
@@ -85,6 +87,7 @@ depends-member:
 - ["O11PerfectHTTP10HTTPMethod", "hashValue"]
 - ["O11PerfectHTTP10HTTPMethod", "head"]
 - ["O11PerfectHTTP10HTTPMethod", "options"]
+- ["O11PerfectHTTP10HTTPMethod", "patch"]
 - ["O11PerfectHTTP10HTTPMethod", "post"]
 - ["O11PerfectHTTP10HTTPMethod", "put"]
 - ["O11PerfectHTTP10HTTPMethod", "trace"]
@@ -99,6 +102,7 @@ depends-member:
 - ["Ps8Hashable", "head"]
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "options"]
+- ["Ps8Hashable", "patch"]
 - ["Ps8Hashable", "post"]
 - ["Ps8Hashable", "put"]
 - ["Ps8Hashable", "trace"]
@@ -154,6 +158,7 @@ depends-member:
 - ["Ps9_Hashable", "head"]
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "options"]
+- ["Ps9_Hashable", "patch"]
 - ["Ps9_Hashable", "post"]
 - ["Ps9_Hashable", "put"]
 - ["Ps9_Hashable", "trace"]
@@ -212,6 +217,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -260,4 +266,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
-interface-hash: "37a08b5dd90ea4d309680fcf816ee8dc"
+interface-hash: "e3732a652ba8faedfa991d637000fbac"
