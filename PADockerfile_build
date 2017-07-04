@@ -1,0 +1,12 @@
+FROM perfectlysoft/perfectassistant:3.1
+RUN apt-get -y update && apt-get install -y mysql
+# Perfect-COpenSSL-Linux.git-7257527782421249772/PADockerfile
+RUN apt-get -y update && apt-get install -y libssl-dev
+
+# Perfect-LinuxBridge.git--4997436215727995127/PADockerfile
+RUN apt-get -y update && apt-get install -y uuid-dev
+
+# Perfect-mysqlclient-Linux.git-6513410220917601716/PADockerfile
+RUN apt-get -y update && apt-get install -y libmysqlclient-dev
+RUN sed -i -e 's/-fabi-version=2 -fno-omit-frame-pointer//g' /usr/lib/x86_64-linux-gnu/pkgconfig/mysqlclient.pc
+RUN rm -rf /var/lib/apt/lists/*

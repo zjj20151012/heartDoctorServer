@@ -45,13 +45,31 @@ open class UserRegistServerManager {
     //MARK: 注册路由
     fileprivate func configure(routes: inout Routes) {
         
-        routes.add(method: .get, uri: "/name") { (request, response) in
+        routes.add(method: .post, uri: "/regist") { (request, response) in
             var jsonString = ""
             let DBManager = DatabaseManager()
-            if let result = DBManager.mysqlGetHomeDataResult() {
-                jsonString = self.baseResponseBodyJSONData(status: 200, message: "成功", data: result)
+//            let params: Array = request.queryParams  //get请求方式
+            let params: Array = request.params() //post请求方式获取所有参数
+//            let params: Array = request.postParams() //post请求方式获取post参数
+            var realParam: [(String,String)] = []
+            var dataParam: [[String:String]] = []
+            for (index,(var key,var value)) in params.enumerated() {
+                print("\(index)" + "->" + "\(params.endIndex)")
+                dataParam.append([key:value])
+                if (index == params.endIndex - 1){
+                    value = "'" + value + "'"
+                }else{
+                    key += ","
+                    value = "'" + value + "'" + ","
+                }
+                realParam.append((key,value))
+            }
+            print(params)
+            let result = DBManager.insertDatabaseSQL(tableName: "user_regist", columnAndValue: realParam)
+            if (result.success){
+                jsonString = self.baseResponseBodyJSONData(status: 200, message: "成功", data: dataParam)
             }else {
-                jsonString = self.baseResponseBodyJSONData(status: 100, message: "失败", data: ["无数据"])
+                jsonString = self.baseResponseBodyJSONData(status: 100, message: result.errorMsg, data: ["无数据"])
             }
             response.setBody(string: jsonString)
             response.completed()
@@ -59,19 +77,6 @@ open class UserRegistServerManager {
         }
         
     }
-//    inout 修饰的参数当其值在函数中被改变的时候原来的值也会被改变
-//    fileprivate func configure(routes: inout Routes) {
-//
-//        //添加接口、请求方式、路径
-//        routes.add(method: .get, uri: "/") { (request,response) in
-//            response.setHeader(.contentType, value: "text/html") //响应头
-//            let jsonDict = ["key":"value"]
-//            let jsonString = self.baseResponseBodyJSONData(status: 200, message: "成功", data: jsonDict)
-//            response.setBody(string: jsonString) //响应体
-//            response.completed()                 //完成响应
-//        }
-//
-//    }
     
     //MARK: 通用响应格式
     func baseResponseBodyJSONData(status: Int, message: String, data: Any!) -> String {
