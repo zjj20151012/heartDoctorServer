@@ -1,19 +1,31 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "userRegistServer"
+- "userLoginServer"
+- "baseServer"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "BaseServerManager"
+- "UserLoginServerManager"
 - "UserRegistServerManager"
+- "baseServer"
+- "userLoginServer"
 - "userRegistServer"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "startServer"]
+- ["C13ServerManager17BaseServerManager", "init"]
+- ["C13ServerManager17BaseServerManager", "startServer"]
+- ["C13ServerManager22UserLoginServerManager", "init"]
+- ["C13ServerManager22UserLoginServerManager", "startServer"]
 - ["C13ServerManager23UserRegistServerManager", "init"]
 - ["C13ServerManager23UserRegistServerManager", "startServer"]
 depends-nominal:
 - "Ps9AnyObject"
+- "C13ServerManager17BaseServerManager"
+- "C13ServerManager22UserLoginServerManager"
 - "C13ServerManager23UserRegistServerManager"
 depends-dynamic-lookup:
 depends-external:
@@ -32,6 +44,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.swiftmodule"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectHTTPServer.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
@@ -104,4 +117,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
-interface-hash: "db82f07f8c125bfe9201d5e3d6e2cd1d"
+interface-hash: "2c91e9bea09955f8f1b742668674d4bb"

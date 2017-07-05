@@ -1,0 +1,255 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BaseRouteManager"
+provides-nominal:
+- "C12RouteManager16BaseRouteManager"
+provides-member:
+- ["C12RouteManager16BaseRouteManager", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+"
+- "BaseRouteManager"
+- !private "Dictionary"
+- "HTTPMethod"
+- "HTTPRequest"
+- "HTTPResponse"
+- "Int"
+- "Routes"
+- "String"
+- "StringLiteralType"
+- !private "print"
+depends-member:
+- ["Ps9AnyObject", "BaseRouteManager"]
+- !private ["Ps9AnyObject", "Dictionary"]
+- ["Ps9AnyObject", "Routes"]
+- !private ["Ps9AnyObject", "api"]
+- !private ["Ps9AnyObject", "baseApi"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", ""]
+- ["C12RouteManager16BaseRouteManager", "BaseRouteManager"]
+- !private ["C12RouteManager16BaseRouteManager", "Dictionary"]
+- ["C12RouteManager16BaseRouteManager", "HTTPMethod"]
+- ["C12RouteManager16BaseRouteManager", "HTTPRequest"]
+- ["C12RouteManager16BaseRouteManager", "HTTPResponse"]
+- ["C12RouteManager16BaseRouteManager", "Int"]
+- ["C12RouteManager16BaseRouteManager", "Routes"]
+- ["C12RouteManager16BaseRouteManager", "String"]
+- ["C12RouteManager16BaseRouteManager", "addURLRoutes"]
+- ["C12RouteManager16BaseRouteManager", "api"]
+- ["C12RouteManager16BaseRouteManager", "baseApi"]
+- ["C12RouteManager16BaseRouteManager", "baseResponseBodyJSONData"]
+- ["C12RouteManager16BaseRouteManager", "deinit"]
+- ["C12RouteManager16BaseRouteManager", "init"]
+- ["C12RouteManager16BaseRouteManager", "mainApi"]
+- !private ["C12RouteManager16BaseRouteManager", "print"]
+- ["C12RouteManager16BaseRouteManager", "sharedInstance"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "jsonEncodedString"]
+- !private ["Ps7CVarArg", "updateValue"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "jsonEncodedString"]
+- !private ["Ps10Collection", "updateValue"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "jsonEncodedString"]
+- !private ["Ps28CustomDebugStringConvertible", "updateValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "jsonEncodedString"]
+- !private ["Ps17CustomReflectable", "updateValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "jsonEncodedString"]
+- !private ["Ps23CustomStringConvertible", "updateValue"]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "jsonEncodedString"]
+- !private ["Vs10Dictionary", "updateValue"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "jsonEncodedString"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "updateValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "jsonEncodedString"]
+- !private ["P10PerfectLib15JSONConvertible", "updateValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["V11PerfectHTTP6Routes", "add"]
+- ["V11PerfectHTTP6Routes", "init"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "jsonEncodedString"]
+- !private ["Ps8Sequence", "updateValue"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "jsonEncodedString"]
+- !private ["Ps10_Indexable", "updateValue"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "jsonEncodedString"]
+- !private ["Ps14_IndexableBase", "updateValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonEncodedString"]
+- !private ["Ps21_ObjectiveCBridgeable", "updateValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C12RouteManager16BaseRouteManager"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "P10PerfectLib15JSONConvertible"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "V11PerfectHTTP6Routes"
+- !private "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/MySQL.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectThread.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectCrypto.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectHTTPServer.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/PerfectNet.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../asn1.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../tls1.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dtls1.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl2.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem2.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../e_os2.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl23.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl3.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pkcs7.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../sha.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/typelib.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_alloc.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_command.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_time.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/psi/psi_base.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
+- "/usr/local/include/mysql/mysql.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_com.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bn.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/client_plugin.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql_version.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/plugin_auth_common.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bio.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../crypto.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../comp.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../srtp.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../evp.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ossl_typ.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/binary_log_types.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/my_list.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
+- "/usr/local/Cellar/mysql/5.7.18_1/include/mysql/mysql/psi/psi_memory.h"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-mysqlclient.git-5333716826204139417/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
+- "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
+interface-hash: "2ca9db515daa3552d245d58b4f944b1d"

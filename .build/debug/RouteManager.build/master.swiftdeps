@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "0e26b5790d26ddfe0a5649364f9f691e"
+build_time: [552562258, 164757000]
+inputs:
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/BaseRouteManager.swift": [552562174, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/UserLoginRoute.swift": [552561889, 0]
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/UserRegistRoute.swift": [552561889, 0]

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/master.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/BaseRouteManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/BaseRouteManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/BaseRouteManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/BaseRouteManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/BaseRouteManager.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/UserLoginRoute.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserLoginRoute.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserLoginRoute.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserLoginRoute~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserLoginRoute.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/RouteManager/UserRegistRoute.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserRegistRoute.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserRegistRoute.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserRegistRoute~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/RouteManager.build/UserRegistRoute.swiftdeps"
+  }
+}

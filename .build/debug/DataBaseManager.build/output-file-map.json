@@ -2,10 +2,22 @@
   "": {
     "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/master.swiftdeps"
   },
-  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager/DatabaseManager.swift": {
-    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.d",
-    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.swift.o",
-    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager~partial.swiftmodule",
-    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/DatabaseManager.swiftdeps"
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager/BaseDBManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/BaseDBManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/BaseDBManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/BaseDBManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/BaseDBManager.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager/UserLoginDBManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserLoginDBManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserLoginDBManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserLoginDBManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserLoginDBManager.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/DataBaseManager/UserRegistDBManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserRegistDBManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserRegistDBManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserRegistDBManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/DataBaseManager.build/UserRegistDBManager.swiftdeps"
   }
 }

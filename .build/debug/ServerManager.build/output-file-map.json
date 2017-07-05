@@ -2,6 +2,18 @@
   "": {
     "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/master.swiftdeps"
   },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/ServerManager/BaseServerManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/BaseServerManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/BaseServerManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/BaseServerManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/BaseServerManager.swiftdeps"
+  },
+  "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/ServerManager/UserLoginServerManager.swift": {
+    "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserLoginServerManager.d",
+    "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserLoginServerManager.swift.o",
+    "swiftmodule": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserLoginServerManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserLoginServerManager.swiftdeps"
+  },
   "/Users/zhujiajie/Desktop/heartDoctorServer/Sources/ServerManager/UserRegistServerManager.swift": {
     "dependencies": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserRegistServerManager.d",
     "object": "/Users/zhujiajie/Desktop/heartDoctorServer/.build/debug/ServerManager.build/UserRegistServerManager.swift.o",

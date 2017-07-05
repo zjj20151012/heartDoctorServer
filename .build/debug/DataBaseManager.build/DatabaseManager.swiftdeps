@@ -25,7 +25,6 @@ depends-top-level:
 - "StringLiteralType"
 - "TernaryPrecedence"
 - !private "UnicodeScalarType"
-- "mysqlStatement"
 - "mysql_database"
 - "mysql_host"
 - "mysql_password"
@@ -43,7 +42,7 @@ depends-member:
 - !private ["Ps9AnyObject", "forEachRow"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "mysql"]
-- ["Ps9AnyObject", "mysqlStatement"]
+- !private ["Ps9AnyObject", "mysqlStatement"]
 - !private ["Ps9AnyObject", "mysql_database"]
 - !private ["Ps9AnyObject", "mysql_host"]
 - !private ["Ps9AnyObject", "mysql_password"]
@@ -109,7 +108,6 @@ depends-member:
 - !private ["C15DataBaseManager15DatabaseManager", "table_account"]
 - ["C15DataBaseManager15DatabaseManager", "updateDatabaseSQL"]
 - !private ["Vs10Dictionary", "init"]
-- !private ["Vs10Dictionary", "isEmpty"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "init"]
@@ -120,7 +118,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "isEmpty"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "isEmpty"]
@@ -284,4 +281,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
-interface-hash: "abccd9169eeebf2fabb404cc23aa33ef"
+interface-hash: "04440058d592948445cf829f27709d52"

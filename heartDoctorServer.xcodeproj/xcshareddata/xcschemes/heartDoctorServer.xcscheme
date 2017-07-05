@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_815"
+               BlueprintIdentifier = "OBJ_822"
                BuildableName = "PerfectLib.framework"
                BlueprintName = "PerfectLib"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_831"
+               BlueprintIdentifier = "OBJ_838"
                BuildableName = "PerfectThread.framework"
                BlueprintName = "PerfectThread"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_840"
+               BlueprintIdentifier = "OBJ_847"
                BuildableName = "COpenSSL.framework"
                BlueprintName = "COpenSSL"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1528"
+               BlueprintIdentifier = "OBJ_1535"
                BuildableName = "PerfectCrypto.framework"
                BlueprintName = "PerfectCrypto"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -70,7 +70,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1547"
+               BlueprintIdentifier = "OBJ_1554"
                BuildableName = "PerfectNet.framework"
                BlueprintName = "PerfectNet"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -84,7 +84,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1568"
+               BlueprintIdentifier = "OBJ_1575"
                BuildableName = "PerfectHTTP.framework"
                BlueprintName = "PerfectHTTP"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -98,7 +98,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1593"
+               BlueprintIdentifier = "OBJ_1600"
                BuildableName = "CZlib.framework"
                BlueprintName = "CZlib"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -112,7 +112,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1627"
+               BlueprintIdentifier = "OBJ_1634"
                BuildableName = "PerfectHTTPServer.framework"
                BlueprintName = "PerfectHTTPServer"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -126,7 +126,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1665"
+               BlueprintIdentifier = "OBJ_1672"
                BuildableName = "CHTTPParser.framework"
                BlueprintName = "CHTTPParser"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -140,7 +140,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1686"
+               BlueprintIdentifier = "OBJ_1693"
                BuildableName = "MySQL.framework"
                BlueprintName = "MySQL"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -154,7 +154,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1693"
+               BlueprintIdentifier = "OBJ_1700"
                BuildableName = "PerfectMustache.framework"
                BlueprintName = "PerfectMustache"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -168,21 +168,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1712"
-               BuildableName = "Main"
-               BlueprintName = "Main"
-               ReferencedContainer = "container:heartDoctorServer.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1744"
+               BlueprintIdentifier = "OBJ_1719"
                BuildableName = "DataBaseManager.framework"
                BlueprintName = "DataBaseManager"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
@@ -196,9 +182,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1746"
+               BlueprintIdentifier = "OBJ_1750"
+               BuildableName = "RouteManager.framework"
+               BlueprintName = "RouteManager"
+               ReferencedContainer = "container:heartDoctorServer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_1783"
                BuildableName = "ServerManager.framework"
                BlueprintName = "ServerManager"
+               ReferencedContainer = "container:heartDoctorServer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_1818"
+               BuildableName = "Main"
+               BlueprintName = "Main"
                ReferencedContainer = "container:heartDoctorServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -229,7 +243,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_815"
+            BlueprintIdentifier = "OBJ_822"
             BuildableName = "PerfectLib.framework"
             BlueprintName = "PerfectLib"
             ReferencedContainer = "container:heartDoctorServer.xcodeproj">

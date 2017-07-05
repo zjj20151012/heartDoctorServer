@@ -4,7 +4,13 @@ import PerfectHTTPServer
 import ServerManager
 
 let userRegistServer = UserRegistServerManager()
-userRegistServer.startServer()
+let userLoginServer = UserLoginServerManager()
+let baseServer = BaseServerManager()
+baseServer.startServer()
+//userLoginServer.startServer()
+
+
+//userLoginServer.startServer()
 
 
 
