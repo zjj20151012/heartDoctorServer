@@ -12,7 +12,7 @@ open class UserRegistDBManager:BaseDBManager {
         super.init()
     }
     
-    override public func insertDatabaseSQL(tableName: String, columnAndValue: [(String, String)]) -> (success: Bool, mysqlResult: MySQL.Results?, errorMsg: String) {
+    public override func insertDatabaseSQL(tableName: String, columnAndValue: [(String, String)]) -> (success: Bool, mysqlResult: MySQL.Results?, errorMsg: String) {
         
         //这个函数返回一个元祖
         var columnStr = ""
@@ -32,6 +32,7 @@ open class UserRegistDBManager:BaseDBManager {
                 valueStr = valueStr + value
             }
         }
+        
         
         let SQL = "INSERT INTO \(tableName) (\(columnStr)) VALUES (\(valueStr))"
         return mysqlStatement(SQL)

@@ -27,7 +27,10 @@ open class UserRegistServerManager:BaseServerManager {
             for (index,(var key,var value)) in params.enumerated() {
                 
                 print("\(index)" + "->" + "\(params.endIndex)")
-                dataParam.append([key:value])
+                if (key != "password"){
+                    dataParam.append([key:value])
+                }
+                
                 if (index == params.endIndex - 1){
                     value = "'" + value + "'"
                 }else{

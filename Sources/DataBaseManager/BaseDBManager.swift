@@ -127,9 +127,9 @@ open class BaseDBManager {
     /// - Parameters:
     ///   - tableName: 表
     ///   - keyValue: 键值对
-    public func selectDataBaseSQLwhere(tableName: String, keyValue: [(String,String)]) -> (success: Bool, mysqlResult: MySQL.Results?, errorMsg: String) {
+    public func selectDataBaseSQLwhere(tableName: String, columnAndValue: [(String,String)]) -> (success: Bool, mysqlResult: MySQL.Results?, errorMsg: String) {
         
-        let SQL = "SELECT * FROM \(tableName) WHERE \(keyValue)"
+        let SQL = "SELECT * FROM \(tableName) WHERE \(columnAndValue)"
         return mysqlStatement(SQL)
         
     }
