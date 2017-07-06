@@ -5,6 +5,7 @@ import ServerManager
 
 let userRegistServer = UserRegistServerManager()
 let userLoginServer = UserLoginServerManager()
+let userUploadFile = UserUploadFileManager()
 let baseServer = BaseServerManager()
 baseServer.startServer()
 //userLoginServer.startServer()
