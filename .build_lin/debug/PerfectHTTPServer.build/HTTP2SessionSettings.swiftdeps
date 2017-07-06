@@ -1,0 +1,142 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HTTP2Setting"
+- "headerTableSize"
+- "enablePush"
+- "maxConcurrentStreams"
+- "initialWindowSize"
+- "maxFrameSize"
+- "maxHeaderListSize"
+- "HTTP2SessionSettings"
+provides-nominal:
+- "V17PerfectHTTPServer20HTTP2SessionSettings"
+provides-member:
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", ""]
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "FloatLiteralType"
+- "HTTP2SessionSettings"
+- "HTTP2Setting"
+- "Int"
+- "IntegerLiteralType"
+- "UInt16"
+- "enablePush"
+- "headerTableSize"
+- "initialWindowSize"
+- "maxConcurrentStreams"
+- "maxFrameSize"
+- "maxHeaderListSize"
+depends-member:
+- !private ["Ps17BitwiseOperations", "max"]
+- !private ["Ps7CVarArg", "max"]
+- !private ["Ps10Comparable", "max"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "max"]
+- !private ["Ps17CustomReflectable", "max"]
+- !private ["Ps23CustomStringConvertible", "max"]
+- !private ["Ps9Equatable", "max"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "max"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "Bool"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "Int"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "enablePush"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "headerTableSize"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "init"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "initialWindowSize"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "maxConcurrentStreams"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "maxFrameSize"]
+- ["V17PerfectHTTPServer20HTTP2SessionSettings", "maxHeaderListSize"]
+- !private ["Ps8Hashable", "max"]
+- !private ["Si", "max"]
+- !private ["Ps7Integer", "max"]
+- !private ["Ps17IntegerArithmetic", "max"]
+- !private ["P10PerfectLib15JSONConvertible", "max"]
+- !private ["Ps10MirrorPath", "max"]
+- !private ["Ps13SignedInteger", "max"]
+- !private ["Ps12SignedNumber", "max"]
+- !private ["Ps10Strideable", "max"]
+- !private ["P10Foundation13_BitShiftable", "max"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "max"]
+- !private ["Ps9_Hashable", "max"]
+- !private ["Ps14_Incrementable", "max"]
+- !private ["Ps8_Integer", "max"]
+- !private ["Ps18_IntegerArithmetic", "max"]
+- !private ["P10Foundation12_IntegerLike", "max"]
+- !private ["P10Foundation17_ObjectBridgeable", "max"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "max"]
+- !private ["Ps14_SignedInteger", "max"]
+- !private ["Ps11_Strideable", "max"]
+depends-nominal:
+- !private "Ps17BitwiseOperations"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "V17PerfectHTTPServer20HTTP2SessionSettings"
+- !private "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "P10PerfectLib15JSONConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "P10Foundation13_BitShiftable"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/perfectbuild/.build/debug/PerfectHTTP.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectLib.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectThread.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectCrypto.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectNet.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zlib.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/czlib.h"
+- "/perfectbuild/.build/checkouts/Perfect-LinuxBridge.git-3821620275834537827/LinuxBridge/include/LinuxBridge.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStddef.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zconf.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/AssertionReporting.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zutil.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdbool.h"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/openssl.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCHTTPParser/include/http_parser.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeStubs.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../inftrees.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/LibcShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/UnicodeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/FoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/GlobalObjects.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/HeapObject.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdint.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RefCount.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/Visibility.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-mysqlclient-Linux.git-9122369949930935240/module.modulemap"
+- "/perfectbuild/.build/debug/LinuxBridge.build/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCHTTPParser/include/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/dispatch/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/module.modulemap"
+interface-hash: "15ced538dbb6a07af98bd4e2f3a2524f"

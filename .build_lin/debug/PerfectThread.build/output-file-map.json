@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectThread.build/master.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/Promise.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectThread.build/Promise.d",
+    "object": "/perfectbuild/.build/debug/PerfectThread.build/Promise.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectThread.build/Promise~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectThread.build/Promise.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/Threading.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectThread.build/Threading.d",
+    "object": "/perfectbuild/.build/debug/PerfectThread.build/Threading.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectThread.build/Threading~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectThread.build/Threading.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/ThreadQueue.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectThread.build/ThreadQueue.d",
+    "object": "/perfectbuild/.build/debug/PerfectThread.build/ThreadQueue.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectThread.build/ThreadQueue~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectThread.build/ThreadQueue.swiftdeps"
+  }
+}

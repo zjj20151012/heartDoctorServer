@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectMustache.build/master.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Mustache.git--5417423326023072183/Sources/Mustache.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectMustache.build/Mustache.d",
+    "object": "/perfectbuild/.build/debug/PerfectMustache.build/Mustache.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectMustache.build/Mustache~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectMustache.build/Mustache.swiftdeps"
+  }
+}

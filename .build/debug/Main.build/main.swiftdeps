@@ -19,9 +19,7 @@ depends-member:
 - ["C13ServerManager17BaseServerManager", "init"]
 - ["C13ServerManager17BaseServerManager", "startServer"]
 - ["C13ServerManager22UserLoginServerManager", "init"]
-- ["C13ServerManager22UserLoginServerManager", "startServer"]
 - ["C13ServerManager23UserRegistServerManager", "init"]
-- ["C13ServerManager23UserRegistServerManager", "startServer"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C13ServerManager17BaseServerManager"
@@ -117,4 +115,4 @@ depends-external:
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
 - "/Users/zhujiajie/Desktop/heartDoctorServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
-interface-hash: "2c91e9bea09955f8f1b742668674d4bb"
+interface-hash: "d1a3dab1a91bbee3815bafa109f75482"

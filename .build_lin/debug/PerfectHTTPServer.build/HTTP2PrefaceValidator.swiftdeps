@@ -1,0 +1,209 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "prefaceBytes"
+- "HTTP2PrefaceValidator"
+provides-nominal:
+- "V17PerfectHTTPServer21HTTP2PrefaceValidator"
+provides-member:
+- ["V17PerfectHTTPServer21HTTP2PrefaceValidator", ""]
+depends-top-level:
+- !private "=="
+- "Array"
+- "Double"
+- "HTTP2PrefaceValidator"
+- "NetTCP"
+- "http2ConnectionPreface"
+- "prefaceBytes"
+depends-member:
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "readBytesFully"]
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps10Collection", "count"]
+- ["Ps10Collection", "init"]
+- ["Ps10Comparable", "utf8"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "utf8"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "utf8"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "utf8"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "utf8"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "utf8"]
+- ["Ps26ExpressibleByStringLiteral", "utf8"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "utf8"]
+- ["V17PerfectHTTPServer21HTTP2PrefaceValidator", "Double"]
+- ["V17PerfectHTTPServer21HTTP2PrefaceValidator", "NetTCP"]
+- ["V17PerfectHTTPServer21HTTP2PrefaceValidator", "init"]
+- !private ["V17PerfectHTTPServer21HTTP2PrefaceValidator", "prefaceBytes"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "utf8"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- !private ["P10PerfectLib15JSONConvertible", "count"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- ["P10PerfectLib15JSONConvertible", "utf8"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "utf8"]
+- ["Ps10MirrorPath", "utf8"]
+- !private ["Ps17MutableCollection", "count"]
+- ["Ps17MutableCollection", "init"]
+- !private ["C10PerfectNet3Net", "close"]
+- !private ["C10PerfectNet3Net", "readBytesFully"]
+- !private ["C10PerfectNet6NetTCP", "close"]
+- !private ["C10PerfectNet6NetTCP", "readBytesFully"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps8Sequence", "count"]
+- ["Ps8Sequence", "init"]
+- ["SS", "utf8"]
+- ["Ps16TextOutputStream", "utf8"]
+- ["Ps20TextOutputStreamable", "utf8"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["P10Foundation13_CFBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation13_CFBridgeable", "count"]
+- ["P10Foundation13_CFBridgeable", "init"]
+- ["P10Foundation13_CFBridgeable", "utf8"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "utf8"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "utf8"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "utf8"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
+- ["Ps33_ExpressibleByStringInterpolation", "utf8"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "utf8"]
+- !private ["Ps10_Indexable", "count"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps14_IndexableBase", "count"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps17_MutableIndexable", "count"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["P10Foundation13_NSBridgeable", "count"]
+- ["P10Foundation13_NSBridgeable", "init"]
+- ["P10Foundation13_NSBridgeable", "utf8"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "count"]
+- ["P10Foundation17_ObjectBridgeable", "init"]
+- ["P10Foundation17_ObjectBridgeable", "utf8"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "count"]
+- ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- ["P10Foundation21_ObjectTypeBridgeable", "utf8"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- !private "Sb"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "V17PerfectHTTPServer21HTTP2PrefaceValidator"
+- "Ps8Hashable"
+- "P10PerfectLib15JSONConvertible"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- !private "C10PerfectNet3Net"
+- !private "C10PerfectNet6NetTCP"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- "P10Foundation13_CFBridgeable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "P10Foundation13_NSBridgeable"
+- "P10Foundation17_ObjectBridgeable"
+- "P10Foundation21_ObjectTypeBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/perfectbuild/.build/debug/PerfectHTTP.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectLib.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectThread.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectCrypto.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectNet.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zlib.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/czlib.h"
+- "/perfectbuild/.build/checkouts/Perfect-LinuxBridge.git-3821620275834537827/LinuxBridge/include/LinuxBridge.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStddef.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zconf.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/AssertionReporting.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../zutil.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdbool.h"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/openssl.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCHTTPParser/include/http_parser.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeStubs.h"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/../inftrees.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/LibcShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/UnicodeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/FoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/GlobalObjects.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/HeapObject.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdint.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RefCount.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/Visibility.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-mysqlclient-Linux.git-9122369949930935240/module.modulemap"
+- "/perfectbuild/.build/debug/LinuxBridge.build/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCHTTPParser/include/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/dispatch/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/module.modulemap"
+interface-hash: "85d9b40cd3347864f7f88231d3a8a35e"

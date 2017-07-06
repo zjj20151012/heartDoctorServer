@@ -1,0 +1,7 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "028ad2671f3e501a56b0c1a7cbcbbd15"
+build_time: [552637742, 45478000]
+inputs:
+  "/perfectbuild/Sources/DataBaseManager/BaseDBManager.swift": !dirty [552584968, 0]
+  "/perfectbuild/Sources/DataBaseManager/UserLoginDBManager.swift": !dirty [552585000, 0]
+  "/perfectbuild/Sources/DataBaseManager/UserRegistDBManager.swift": !dirty [552584989, 0]

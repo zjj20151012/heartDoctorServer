@@ -1,0 +1,214 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UserLoginDBManager"
+provides-nominal:
+- "C15DataBaseManager18UserLoginDBManager"
+provides-member:
+- ["C15DataBaseManager18UserLoginDBManager", ""]
+depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- "BaseDBManager"
+- "Bool"
+- !private "BooleanLiteralType"
+- "MySQL"
+- "String"
+- !private "StringLiteralType"
+- "UserLoginDBManager"
+- !private "print"
+depends-member:
+- ["Ps9AnyObject", "Results"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mysqlStatement"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "isEmpty"]
+- ["C15DataBaseManager13BaseDBManager", "Bool"]
+- ["C15DataBaseManager13BaseDBManager", "MySQL"]
+- ["C15DataBaseManager13BaseDBManager", "String"]
+- ["C15DataBaseManager13BaseDBManager", "init"]
+- !private ["C15DataBaseManager13BaseDBManager", "mysqlStatement"]
+- !private ["C15DataBaseManager13BaseDBManager", "print"]
+- ["C15DataBaseManager13BaseDBManager", "selectDataBaseSQLwhere"]
+- ["C15DataBaseManager13BaseDBManager", ""]
+- !private ["Ps23BidirectionalCollection", "isEmpty"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps10Collection", "isEmpty"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "isEmpty"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isEmpty"]
+- !private ["Ps25ExpressibleByArrayLiteral", "isEmpty"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "isEmpty"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "isEmpty"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isEmpty"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "isEmpty"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "isEmpty"]
+- !private ["Ps17MutableCollection", "isEmpty"]
+- ["C5MySQL5MySQL", "Results"]
+- !private ["Ps22RandomAccessCollection", "isEmpty"]
+- !private ["Ps26RangeReplaceableCollection", "isEmpty"]
+- !private ["Ps8Sequence", "isEmpty"]
+- !private ["SS", "init"]
+- !private ["SS", "isEmpty"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "isEmpty"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "isEmpty"]
+- ["C15DataBaseManager18UserLoginDBManager", "Bool"]
+- ["C15DataBaseManager18UserLoginDBManager", "MySQL"]
+- ["C15DataBaseManager18UserLoginDBManager", "String"]
+- ["C15DataBaseManager18UserLoginDBManager", "deinit"]
+- ["C15DataBaseManager18UserLoginDBManager", "init"]
+- !private ["C15DataBaseManager18UserLoginDBManager", "mysqlStatement"]
+- !private ["C15DataBaseManager18UserLoginDBManager", "print"]
+- ["C15DataBaseManager18UserLoginDBManager", "selectDataBaseSQLwhere"]
+- !private ["Ps14_ArrayProtocol", "isEmpty"]
+- !private ["Ps23_BidirectionalIndexable", "isEmpty"]
+- !private ["P10Foundation13_CFBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation13_CFBridgeable", "init"]
+- !private ["P10Foundation13_CFBridgeable", "isEmpty"]
+- !private ["Ps24_DestructorSafeContainer", "isEmpty"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "isEmpty"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "isEmpty"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "isEmpty"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "isEmpty"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "isEmpty"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isEmpty"]
+- !private ["Ps10_Indexable", "isEmpty"]
+- !private ["Ps14_IndexableBase", "isEmpty"]
+- !private ["Ps17_MutableIndexable", "isEmpty"]
+- !private ["P10Foundation13_NSBridgeable", "init"]
+- !private ["P10Foundation13_NSBridgeable", "isEmpty"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "isEmpty"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "isEmpty"]
+- !private ["Ps22_RandomAccessIndexable", "isEmpty"]
+- !private ["Ps26_RangeReplaceableIndexable", "isEmpty"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- "C15DataBaseManager13BaseDBManager"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "C5MySQL5MySQL"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "C15DataBaseManager18UserLoginDBManager"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "P10Foundation13_CFBridgeable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "P10Foundation13_NSBridgeable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/perfectbuild/.build/debug/MySQL.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/include/mysql/typelib.h"
+- "/usr/include/mysql/my_alloc.h"
+- "/usr/include/mysql/my_command.h"
+- "/usr/include/mysql/mysql_time.h"
+- "/usr/include/mysql/mysql/psi/psi_base.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStddef.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/AssertionReporting.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdbool.h"
+- "/usr/include/mysql/mysql.h"
+- "/usr/include/mysql/mysql_com.h"
+- "/usr/include/mysql/mysql/client_plugin.h"
+- "/usr/include/mysql/mysql_version.h"
+- "/usr/include/mysql/mysql/plugin_auth_common.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/include/mysql/binary_log_types.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/LibcShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/UnicodeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/FoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/GlobalObjects.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/HeapObject.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdint.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RefCount.h"
+- "/usr/include/mysql/my_list.h"
+- "/usr/include/mysql/mysql/psi/psi_memory.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/Visibility.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-mysqlclient-Linux.git-9122369949930935240/module.modulemap"
+- "/perfectbuild/.build/debug/LinuxBridge.build/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCZlib/include/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectCHTTPParser/include/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/dispatch/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/module.modulemap"
+interface-hash: "8bc6526b2eaee6ef7bc433cf3ce57801"

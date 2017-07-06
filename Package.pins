@@ -4,14 +4,26 @@
     {
       "package": "COpenSSL",
       "reason": null,
-      "repositoryURL": "https://github.com/PerfectlySoft/Perfect-COpenSSL.git",
-      "version": "2.0.4"
+      "repositoryURL": "https://github.com/PerfectlySoft/Perfect-COpenSSL-Linux.git",
+      "version": "2.0.3"
+    },
+    {
+      "package": "LinuxBridge",
+      "reason": null,
+      "repositoryURL": "https://github.com/PerfectlySoft/Perfect-LinuxBridge.git",
+      "version": "2.0.2"
     },
     {
       "package": "MySQL",
       "reason": null,
       "repositoryURL": "https://github.com/PerfectlySoft/Perfect-MySQL.git",
       "version": "2.1.2"
+    },
+    {
+      "package": "mysqlclient",
+      "reason": null,
+      "repositoryURL": "https://github.com/PerfectlySoft/Perfect-mysqlclient-Linux.git",
+      "version": "2.0.1"
     },
     {
       "package": "PerfectCrypto",
@@ -23,13 +35,13 @@
       "package": "PerfectHTTP",
       "reason": null,
       "repositoryURL": "https://github.com/PerfectlySoft/Perfect-HTTP.git",
-      "version": "2.2.1"
+      "version": "2.2.3"
     },
     {
       "package": "PerfectHTTPServer",
       "reason": null,
       "repositoryURL": "https://github.com/PerfectlySoft/Perfect-HTTPServer.git",
-      "version": "2.2.6"
+      "version": "2.2.15"
     },
     {
       "package": "PerfectLib",
@@ -47,19 +59,13 @@
       "package": "PerfectNet",
       "reason": null,
       "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Net.git",
-      "version": "2.1.14"
+      "version": "2.1.17"
     },
     {
       "package": "PerfectThread",
       "reason": null,
       "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Thread.git",
       "version": "2.0.12"
-    },
-    {
-      "package": "mysqlclient",
-      "reason": null,
-      "repositoryURL": "https://github.com/PerfectlySoft/Perfect-mysqlclient.git",
-      "version": "2.0.0"
     }
   ],
   "version": 1

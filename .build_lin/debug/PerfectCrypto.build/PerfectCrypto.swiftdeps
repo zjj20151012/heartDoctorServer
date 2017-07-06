@@ -1,0 +1,74 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PerfectCrypto"
+- "CryptoError"
+provides-nominal:
+- "O13PerfectCrypto13PerfectCrypto"
+- "V13PerfectCrypto11CryptoError"
+provides-member:
+- ["O13PerfectCrypto13PerfectCrypto", ""]
+- ["V13PerfectCrypto11CryptoError", ""]
+depends-top-level:
+- "Bool"
+- "CryptoError"
+- "Error"
+- "Int"
+- "OpenSSLInternal"
+- "PerfectCrypto"
+- "String"
+depends-member:
+- ["V13PerfectCrypto11CryptoError", "Int"]
+- ["V13PerfectCrypto11CryptoError", "String"]
+- ["V13PerfectCrypto11CryptoError", "_code"]
+- ["V13PerfectCrypto11CryptoError", "_domain"]
+- ["V13PerfectCrypto11CryptoError", "_userInfo"]
+- ["V13PerfectCrypto11CryptoError", "code"]
+- ["V13PerfectCrypto11CryptoError", "deinit"]
+- ["V13PerfectCrypto11CryptoError", "init"]
+- ["V13PerfectCrypto11CryptoError", "msg"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_userInfo"]
+- ["Ps5Error", ""]
+- ["V13PerfectCrypto15OpenSSLInternal", "isInitialized"]
+- ["O13PerfectCrypto13PerfectCrypto", "Bool"]
+- ["O13PerfectCrypto13PerfectCrypto", "OpenSSLInternal"]
+- ["O13PerfectCrypto13PerfectCrypto", "isInitialized"]
+depends-nominal:
+- "V13PerfectCrypto11CryptoError"
+- "Ps5Error"
+- "V13PerfectCrypto15OpenSSLInternal"
+- "O13PerfectCrypto13PerfectCrypto"
+depends-dynamic-lookup:
+depends-external:
+- "/perfectbuild/.build/debug/PerfectLib.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectThread.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/perfectbuild/.build/checkouts/Perfect-LinuxBridge.git-3821620275834537827/LinuxBridge/include/LinuxBridge.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStddef.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/AssertionReporting.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdbool.h"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/openssl.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeStubs.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/LibcShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/UnicodeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/FoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/GlobalObjects.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/HeapObject.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdint.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RefCount.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/Visibility.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-mysqlclient-Linux.git-9122369949930935240/module.modulemap"
+- "/perfectbuild/.build/debug/LinuxBridge.build/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/dispatch/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/module.modulemap"
+interface-hash: "8b18cc72ffad6dab8f6a79217dd23fd4"

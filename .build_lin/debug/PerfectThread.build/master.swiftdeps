@@ -1,0 +1,7 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "092311cc3003c8677ad3750e156f3cd2"
+build_time: [552637702, 202777000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/Promise.swift": [552637447, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/Threading.swift": [552637447, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Thread.git--342048029717712177/Sources/ThreadQueue.swift": [552637447, 0]

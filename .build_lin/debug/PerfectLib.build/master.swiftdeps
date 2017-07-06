@@ -1,0 +1,14 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "ffd7e28c49179751808dbfb33b3c560c"
+build_time: [552637702, 195445000]
+inputs:
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/Bytes.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/Dir.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/File.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/JSONConvertible.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/Log.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/PerfectError.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/PerfectServer.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/SwiftCompatibility.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/SysProcess.swift": [552637434, 0]
+  "/perfectbuild/.build/checkouts/PerfectLib.git--6853701928096195484/Sources/PerfectLib/Utilities.swift": [552637434, 0]

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/master.swiftdeps"
+  },
+  "/perfectbuild/Sources/DataBaseManager/BaseDBManager.swift": {
+    "dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/BaseDBManager.d",
+    "object": "/perfectbuild/.build/debug/DataBaseManager.build/BaseDBManager.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/DataBaseManager.build/BaseDBManager~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/BaseDBManager.swiftdeps"
+  },
+  "/perfectbuild/Sources/DataBaseManager/UserLoginDBManager.swift": {
+    "dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/UserLoginDBManager.d",
+    "object": "/perfectbuild/.build/debug/DataBaseManager.build/UserLoginDBManager.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/DataBaseManager.build/UserLoginDBManager~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/UserLoginDBManager.swiftdeps"
+  },
+  "/perfectbuild/Sources/DataBaseManager/UserRegistDBManager.swift": {
+    "dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/UserRegistDBManager.d",
+    "object": "/perfectbuild/.build/debug/DataBaseManager.build/UserRegistDBManager.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/DataBaseManager.build/UserRegistDBManager~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/DataBaseManager.build/UserRegistDBManager.swiftdeps"
+  }
+}

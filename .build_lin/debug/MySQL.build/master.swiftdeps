@@ -1,0 +1,5 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "03a56bff61a0188fabaacbe9a75b5683"
+build_time: [552637701, 290077000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-MySQL.git-8972406976062434962/Sources/MySQL/MySQL.swift": [552637446, 0]

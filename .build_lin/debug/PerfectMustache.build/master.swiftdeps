@@ -1,0 +1,5 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "ee66369cdcdeecf80dbcbaf1fc93da90"
+build_time: [552637731, 247276000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-Mustache.git--5417423326023072183/Sources/Mustache.swift": [552637448, 0]

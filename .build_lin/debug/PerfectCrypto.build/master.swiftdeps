@@ -1,0 +1,11 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "5af8eabf34758e78010383ea507e931d"
+build_time: [552637706, 461546000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/Algorithms.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/ByteIO.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/Extensions.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/JWT.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/Keys.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/OpenSSLInternal.swift": [552637438, 0]
+  "/perfectbuild/.build/checkouts/Perfect-Crypto.git--5923832507643046773/Sources/PerfectCrypto.swift": [552637438, 0]

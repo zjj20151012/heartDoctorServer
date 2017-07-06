@@ -1,0 +1,475 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "logTerminal"
+- "NetEvent"
+provides-nominal:
+- "C10PerfectNet8NetEvent"
+- "OC10PerfectNet8NetEvent6Filter"
+provides-member:
+- ["C10PerfectNet8NetEvent", ""]
+- ["OC10PerfectNet8NetEvent6Filter", ""]
+depends-top-level:
+- !private "!="
+- !private "&"
+- !private "*"
+- !private "-"
+- !private "..<"
+- !private "/"
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CLOCK_MONOTONIC"
+- "Double"
+- !private "EINTR"
+- "EPOLLERR"
+- !private "EPOLLET"
+- "EPOLLIN"
+- !private "EPOLLONESHOT"
+- "EPOLLOUT"
+- "EPOLLWAKEUP"
+- !private "EPOLL_CTL_ADD"
+- !private "EPOLL_CTL_DEL"
+- !private "ERROR"
+- !private "FILT_READ"
+- !private "FILT_TIMER"
+- !private "FILT_WRITE"
+- !private "FLAG_NONE"
+- "FloatLiteralType"
+- !private "Int"
+- "Int32"
+- "IntegerLiteralType"
+- !private "MemoryLayout"
+- "NetEvent"
+- "Never"
+- !private "RLIMIT_NOFILE"
+- !private "SIGPIPE"
+- !private "SIG_IGN"
+- !private "SOL_SOCKET"
+- !private "SO_ERROR"
+- "SocketType"
+- "String"
+- !private "StringLiteralType"
+- !private "TFD_NONBLOCK"
+- !private "TernaryPrecedence"
+- "Threading"
+- "UInt32"
+- "UnicodeScalarType"
+- "UnsafeMutablePointer"
+- !private "close"
+- !private "epoll_create"
+- !private "epoll_ctl"
+- !private "epoll_event"
+- !private "epoll_wait"
+- !private "errno"
+- !private "exit"
+- !private "getrlimit"
+- !private "getsockopt"
+- !private "invalidSocket"
+- !private "itimerspec"
+- "logTerminal"
+- !private "memset"
+- !private "print"
+- !private "rlimit"
+- !private "setrlimit"
+- !private "sigaction"
+- !private "socklen_t"
+- !private "timerfd_create"
+- !private "timerfd_settime"
+- !private "|"
+depends-member:
+- !private ["Ps9AnyObject", "CLOCK_MONOTONIC"]
+- !private ["Ps9AnyObject", "EINTR"]
+- !private ["Ps9AnyObject", "EPOLLERR"]
+- !private ["Ps9AnyObject", "EPOLLET"]
+- !private ["Ps9AnyObject", "EPOLLIN"]
+- !private ["Ps9AnyObject", "EPOLLONESHOT"]
+- !private ["Ps9AnyObject", "EPOLLOUT"]
+- !private ["Ps9AnyObject", "EPOLL_CTL_ADD"]
+- !private ["Ps9AnyObject", "EPOLL_CTL_DEL"]
+- !private ["Ps9AnyObject", "Filter"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int32"]
+- !private ["Ps9AnyObject", "MemoryLayout"]
+- ["Ps9AnyObject", "NetEvent"]
+- ["Ps9AnyObject", "QueuedSocket"]
+- !private ["Ps9AnyObject", "RLIMIT_NOFILE"]
+- !private ["Ps9AnyObject", "SIGPIPE"]
+- !private ["Ps9AnyObject", "SIG_IGN"]
+- !private ["Ps9AnyObject", "SOL_SOCKET"]
+- !private ["Ps9AnyObject", "SO_ERROR"]
+- ["Ps9AnyObject", "SocketType"]
+- !private ["Ps9AnyObject", "TFD_NONBLOCK"]
+- ["Ps9AnyObject", "Threading"]
+- !private ["Ps9AnyObject", "UnsafeMutablePointer"]
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "debug"]
+- !private ["Ps9AnyObject", "epoll_create"]
+- !private ["Ps9AnyObject", "epoll_ctl"]
+- !private ["Ps9AnyObject", "epoll_wait"]
+- !private ["Ps9AnyObject", "errno"]
+- !private ["Ps9AnyObject", "event"]
+- !private ["Ps9AnyObject", "evlist"]
+- !private ["Ps9AnyObject", "getrlimit"]
+- !private ["Ps9AnyObject", "getsockopt"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initOnce"]
+- !private ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "invalidSocket"]
+- !private ["Ps9AnyObject", "itimerspec"]
+- !private ["Ps9AnyObject", "kq"]
+- !private ["Ps9AnyObject", "lock"]
+- !private ["Ps9AnyObject", "logTerminal"]
+- !private ["Ps9AnyObject", "memset"]
+- !private ["Ps9AnyObject", "noTimeout"]
+- !private ["Ps9AnyObject", "numEvents"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "queuedSockets"]
+- !private ["Ps9AnyObject", "rlimit"]
+- ["Ps9AnyObject", "runLoop"]
+- !private ["Ps9AnyObject", "setrlimit"]
+- !private ["Ps9AnyObject", "sigaction"]
+- !private ["Ps9AnyObject", "socklen_t"]
+- ["Ps9AnyObject", "staticEvent"]
+- !private ["Ps9AnyObject", "timerfd_create"]
+- !private ["Ps9AnyObject", "timerfd_settime"]
+- !private ["Ps9AnyObject", "unlock"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "init"]
+- !private ["Ps7CVarArg", "allocate"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "removeValue"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "allocate"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "allocate"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "removeValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "allocate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "subscript"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "allocate"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "removeValue"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "removeValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "removeValue"]
+- !private ["Vs10Dictionary", "subscript"]
+- ["VSC12EPOLL_EVENTS", "rawValue"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "allocate"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "serial"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "removeValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["OC10PerfectNet8NetEvent6Filter", "EPOLLIN"]
+- !private ["OC10PerfectNet8NetEvent6Filter", "EPOLLOUT"]
+- ["OC10PerfectNet8NetEvent6Filter", "Int32"]
+- ["OC10PerfectNet8NetEvent6Filter", "UInt32"]
+- ["OC10PerfectNet8NetEvent6Filter", "epollEvent"]
+- ["OC10PerfectNet8NetEvent6Filter", "error"]
+- ["OC10PerfectNet8NetEvent6Filter", "none"]
+- ["OC10PerfectNet8NetEvent6Filter", "read"]
+- ["OC10PerfectNet8NetEvent6Filter", "timer"]
+- ["OC10PerfectNet8NetEvent6Filter", "write"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "allocate"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "serial"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Si", "init"]
+- !private ["Vs5Int32", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "removeValue"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
+- ["CV13PerfectThread9Threading4Lock", "init"]
+- !private ["CV13PerfectThread9Threading4Lock", "lock"]
+- !private ["CV13PerfectThread9Threading4Lock", "unlock"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Os12MemoryLayout", "size"]
+- !private ["Ps10MirrorPath", "init"]
+- ["C10PerfectNet8NetEvent", "Bool"]
+- !private ["C10PerfectNet8NetEvent", "CLOCK_MONOTONIC"]
+- ["C10PerfectNet8NetEvent", "Double"]
+- !private ["C10PerfectNet8NetEvent", "EINTR"]
+- !private ["C10PerfectNet8NetEvent", "EPOLLERR"]
+- !private ["C10PerfectNet8NetEvent", "EPOLLET"]
+- !private ["C10PerfectNet8NetEvent", "EPOLLIN"]
+- !private ["C10PerfectNet8NetEvent", "EPOLLONESHOT"]
+- !private ["C10PerfectNet8NetEvent", "EPOLLOUT"]
+- !private ["C10PerfectNet8NetEvent", "EPOLL_CTL_ADD"]
+- !private ["C10PerfectNet8NetEvent", "EPOLL_CTL_DEL"]
+- ["C10PerfectNet8NetEvent", "EventCallback"]
+- ["C10PerfectNet8NetEvent", "Filter"]
+- !private ["C10PerfectNet8NetEvent", "Int"]
+- ["C10PerfectNet8NetEvent", "Int32"]
+- !private ["C10PerfectNet8NetEvent", "MemoryLayout"]
+- ["C10PerfectNet8NetEvent", "NetEvent"]
+- ["C10PerfectNet8NetEvent", "QueuedSocket"]
+- !private ["C10PerfectNet8NetEvent", "RLIMIT_NOFILE"]
+- !private ["C10PerfectNet8NetEvent", "SIGPIPE"]
+- !private ["C10PerfectNet8NetEvent", "SIG_IGN"]
+- !private ["C10PerfectNet8NetEvent", "SOL_SOCKET"]
+- !private ["C10PerfectNet8NetEvent", "SO_ERROR"]
+- ["C10PerfectNet8NetEvent", "SocketType"]
+- !private ["C10PerfectNet8NetEvent", "TFD_NONBLOCK"]
+- ["C10PerfectNet8NetEvent", "Threading"]
+- ["C10PerfectNet8NetEvent", "UInt32"]
+- ["C10PerfectNet8NetEvent", "UnsafeMutablePointer"]
+- ["C10PerfectNet8NetEvent", "add"]
+- !private ["C10PerfectNet8NetEvent", "close"]
+- !private ["C10PerfectNet8NetEvent", "debug"]
+- ["C10PerfectNet8NetEvent", "deinit"]
+- !private ["C10PerfectNet8NetEvent", "emptyCallback"]
+- !private ["C10PerfectNet8NetEvent", "epoll_create"]
+- !private ["C10PerfectNet8NetEvent", "epoll_ctl"]
+- !private ["C10PerfectNet8NetEvent", "epoll_event"]
+- !private ["C10PerfectNet8NetEvent", "epoll_wait"]
+- !private ["C10PerfectNet8NetEvent", "errno"]
+- ["C10PerfectNet8NetEvent", "event"]
+- !private ["C10PerfectNet8NetEvent", "evlist"]
+- !private ["C10PerfectNet8NetEvent", "getrlimit"]
+- !private ["C10PerfectNet8NetEvent", "getsockopt"]
+- ["C10PerfectNet8NetEvent", "init"]
+- !private ["C10PerfectNet8NetEvent", "initOnce"]
+- ["C10PerfectNet8NetEvent", "initialize"]
+- !private ["C10PerfectNet8NetEvent", "invalidSocket"]
+- !private ["C10PerfectNet8NetEvent", "itimerspec"]
+- !private ["C10PerfectNet8NetEvent", "kq"]
+- !private ["C10PerfectNet8NetEvent", "lock"]
+- !private ["C10PerfectNet8NetEvent", "logTerminal"]
+- !private ["C10PerfectNet8NetEvent", "memset"]
+- ["C10PerfectNet8NetEvent", "noTimeout"]
+- !private ["C10PerfectNet8NetEvent", "numEvents"]
+- !private ["C10PerfectNet8NetEvent", "print"]
+- !private ["C10PerfectNet8NetEvent", "queuedSockets"]
+- ["C10PerfectNet8NetEvent", "remove"]
+- !private ["C10PerfectNet8NetEvent", "rlimit"]
+- ["C10PerfectNet8NetEvent", "runLoop"]
+- !private ["C10PerfectNet8NetEvent", "setrlimit"]
+- !private ["C10PerfectNet8NetEvent", "sigaction"]
+- !private ["C10PerfectNet8NetEvent", "socklen_t"]
+- ["C10PerfectNet8NetEvent", "staticEvent"]
+- !private ["C10PerfectNet8NetEvent", "timerfd_create"]
+- !private ["C10PerfectNet8NetEvent", "timerfd_settime"]
+- !private ["OV13PerfectThread9Threading9QueueType", "serial"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "removeValue"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "allocate"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "subscript"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["P13PerfectThread11ThreadQueue", "dispatch"]
+- ["V13PerfectThread9Threading", "Lock"]
+- !private ["V13PerfectThread9Threading", "dispatch"]
+- !private ["V13PerfectThread9Threading", "getQueue"]
+- ["V13PerfectThread9Threading", "noTimeout"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Sp", "allocate"]
+- !private ["Sp", "subscript"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["P10Foundation13_BitShiftable", "init"]
+- !private ["P10Foundation13_CFBridgeable", "_getBuiltinLogicValue"]
+- ["P10Foundation13_CFBridgeable", "init"]
+- !private ["P10Foundation13_CFBridgeable", "removeValue"]
+- !private ["P10Foundation13_CFBridgeable", "subscript"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "allocate"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "serial"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps14_Incrementable", "init"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "removeValue"]
+- !private ["Ps10_Indexable", "subscript"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "removeValue"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["P10Foundation12_IntegerLike", "init"]
+- ["P10Foundation13_NSBridgeable", "init"]
+- !private ["P10Foundation13_NSBridgeable", "removeValue"]
+- !private ["P10Foundation13_NSBridgeable", "subscript"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "removeValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "subscript"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "removeValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "subscript"]
+- !private ["Ps8_Pointer", "allocate"]
+- !private ["Ps8_Pointer", "subscript"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "allocate"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps11_Strideable", "subscript"]
+- !private ["VVSC9sigaction35__Unnamed_union___sigaction_handler", "sa_handler"]
+- !private ["VSC17__rlimit_resource", "rawValue"]
+- !private ["VSC10epoll_data", "fd"]
+- !private ["VSC11epoll_event", "data"]
+- !private ["VSC11epoll_event", "events"]
+- !private ["VSC11epoll_event", "init"]
+- !private ["VSC10itimerspec", "init"]
+- !private ["VSC10itimerspec", "it_interval"]
+- !private ["VSC10itimerspec", "it_value"]
+- !private ["VSC6rlimit", "init"]
+- !private ["VSC6rlimit", "rlim_cur"]
+- !private ["VSC6rlimit", "rlim_max"]
+- !private ["VSC9sigaction", "__sigaction_handler"]
+- !private ["VSC9sigaction", "init"]
+- !private ["VSC9sigaction", "sa_flags"]
+- !private ["VSC8timespec", "tv_nsec"]
+- !private ["VSC8timespec", "tv_sec"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "P10PerfectNet28BytesSwappingUnsignedInteger"
+- !private "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- "VSC12EPOLL_EVENTS"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "OC10PerfectNet8NetEvent6Filter"
+- !private "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "P10PerfectLib15JSONConvertible"
+- "CV13PerfectThread9Threading4Lock"
+- !private "Ps25LosslessStringConvertible"
+- !private "Os12MemoryLayout"
+- !private "Ps10MirrorPath"
+- "C10PerfectNet8NetEvent"
+- !private "OV13PerfectThread9Threading9QueueType"
+- "Ps16RawRepresentable"
+- "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "P13PerfectThread11ThreadQueue"
+- "V13PerfectThread9Threading"
+- !private "Vs6UInt32"
+- !private "Sp"
+- !private "Ps15UnsignedInteger"
+- !private "P10Foundation13_BitShiftable"
+- "P10Foundation13_CFBridgeable"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
+- "P10Foundation13_NSBridgeable"
+- "P10Foundation17_ObjectBridgeable"
+- "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps8_Pointer"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "VVSC9sigaction35__Unnamed_union___sigaction_handler"
+- !private "VSC17__rlimit_resource"
+- !private "VSC10epoll_data"
+- !private "VSC11epoll_event"
+- !private "VSC10itimerspec"
+- !private "VSC6rlimit"
+- !private "VSC9sigaction"
+- !private "VSC8timespec"
+depends-dynamic-lookup:
+depends-external:
+- "/perfectbuild/.build/debug/PerfectLib.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectThread.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/perfectbuild/.build/debug/PerfectCrypto.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/perfectbuild/.build/checkouts/Perfect-LinuxBridge.git-3821620275834537827/LinuxBridge/include/LinuxBridge.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStddef.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/AssertionReporting.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdbool.h"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/openssl.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeStubs.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/LibcShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/UnicodeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RuntimeShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/FoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/GlobalObjects.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/HeapObject.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/SwiftStdint.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/RefCount.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/Visibility.h"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-mysqlclient-Linux.git-9122369949930935240/module.modulemap"
+- "/perfectbuild/.build/debug/LinuxBridge.build/module.modulemap"
+- "/perfectbuild/.build/checkouts/Perfect-COpenSSL-Linux.git--8639873466956391470/COpenSSL/include/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/dispatch/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/swift-3.1.1-RELEASE-ubuntu16.04/usr/lib/swift/shims/module.modulemap"
+interface-hash: "b72ea1025f91d03f2a41c86e36688221"

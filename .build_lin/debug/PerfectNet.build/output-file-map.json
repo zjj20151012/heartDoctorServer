@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/master.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/Net.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/Net.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/Net.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/Net~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/Net.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetAddress.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetAddress.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetAddress.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetAddress~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetAddress.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetEvent.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetEvent.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetEvent.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetEvent~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetEvent.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetNamedPipe.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetNamedPipe.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetNamedPipe.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetNamedPipe~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetNamedPipe.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetTCP.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetTCP.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetTCP.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetTCP~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetTCP.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetTCPSSL.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetTCPSSL.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetTCPSSL.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetTCPSSL~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetTCPSSL.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-Net.git-5728325461283673710/Sources/NetUDP.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetUDP.d",
+    "object": "/perfectbuild/.build/debug/PerfectNet.build/NetUDP.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectNet.build/NetUDP~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectNet.build/NetUDP.swiftdeps"
+  }
+}

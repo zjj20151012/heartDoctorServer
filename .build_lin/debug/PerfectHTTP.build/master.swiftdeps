@@ -1,0 +1,13 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "70360eaaf3439f7891a6b318792e72ed"
+build_time: [552637723, 824060000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/HTTPFilter.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/HTTPHeaders.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/HTTPMethod.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/HTTPRequest.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/HTTPResponse.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/MimeReader.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/MimeType.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/Routing.swift": [552637443, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--2413083961967859259/Sources/StaticFileHandler.swift": [552637443, 0]

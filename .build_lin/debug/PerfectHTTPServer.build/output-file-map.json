@@ -1,0 +1,113 @@
+{
+  "": {
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/master.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTPContentCompression.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPContentCompression.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPContentCompression.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPContentCompression~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPContentCompression.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTPMultiplexer.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPMultiplexer.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPMultiplexer.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPMultiplexer~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPMultiplexer.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTPServer.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServer.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServer.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServer~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServer.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTPServerEx.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerEx.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerEx~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP11/HTTP11Request.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Request.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11/HTTP11Request.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Request~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Request.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP11/HTTP11Response.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Response.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11/HTTP11Response.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Response~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP11Response.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HPACK.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HPACK.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HPACK.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HPACK~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HPACK.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2Client.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Client.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2Client.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Client~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Client.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2Frame.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Frame.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2Frame.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Frame~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Frame.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2FrameReader.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameReader.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2FrameReader.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameReader~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameReader.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2FrameWriter.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameWriter.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2FrameWriter.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameWriter~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2FrameWriter.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2PrefaceValidator.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2PrefaceValidator.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2PrefaceValidator.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2PrefaceValidator~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2PrefaceValidator.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2Request.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Request.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2Request.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Request~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Request.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2Response.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Response.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2Response.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Response~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Response.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2Session.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Session.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2Session.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Session~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2Session.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-3828423663886772559/Sources/PerfectHTTPServer/HTTP2/HTTP2SessionSettings.swift": {
+    "dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2SessionSettings.d",
+    "object": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2/HTTP2SessionSettings.swift.o",
+    "swiftmodule": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2SessionSettings~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/debug/PerfectHTTPServer.build/HTTP2SessionSettings.swiftdeps"
+  }
+}
