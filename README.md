@@ -9,8 +9,8 @@
 ## 编译 & 运行
 
 ### 1.终端
-$ cd /根目录
-$ swift build  这个过程将会消耗您一定时间，请耐心等待
+$ cd /根目录</br>
+$ swift build  这个过程将会消耗您一定时间，请耐心等待</br>
 $ .build/debug/Main 若看见输出 Starting HTTP server  on 0.0.0.0:8081 则编译运行成功，此时在浏览器中输入 [0.0.0.0:8081/baseApi](localhost:8081/baseApi)即可，由于采用POST请求，所以可以采用 [Postman](https://www.getpostman.com/) 进行模拟POST请求
 ### 2.Xcode
 $ swift package generate-xcodeproj  命令执行完后会在你本地项目中生成Xcode工程文件，打开该工程文件 Command + R 编译运行即可
@@ -72,5 +72,5 @@ $ swift package generate-xcodeproj  命令执行完后会在你本地项目中�
 
 ## 联系我
 
-邮箱：zzhujiajie@hotmail.com
+邮箱：zzhujiajie@hotmail.com</br>
            443411162@qq.com
